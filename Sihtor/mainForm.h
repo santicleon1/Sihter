@@ -34,14 +34,26 @@ namespace Sihtor {
 				delete components;
 			}
 		}
-	private: System::Windows::Forms::MenuStrip^ menuStrip1;
-	private: System::Windows::Forms::ToolStripMenuItem^ podaciToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^ radnikToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^ titulaImePrezimeToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^ adresaToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^ organizacijskaJedinicaToolStripMenuItem;
-	private: System::Windows::Forms::ComboBox^ comboBox1;
-	private: System::Windows::Forms::Label^ label1;
+	private: System::Windows::Forms::ComboBox^ monthSelector;
+	protected:
+
+
+
+
+
+
+
+	private: System::Windows::Forms::Label^ monthLabel;
+
+	private: System::Windows::Forms::Label^ radnikNameLabel;
+
+
+	private: System::Windows::Forms::TextBox^ radnikName;
+	private: System::Windows::Forms::Label^ orgNameLabel;
+
+
+	private: System::Windows::Forms::TextBox^ orgName;
+
 
 	protected:
 
@@ -61,98 +73,82 @@ namespace Sihtor {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			this->menuStrip1 = (gcnew System::Windows::Forms::MenuStrip());
-			this->podaciToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->radnikToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->titulaImePrezimeToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->adresaToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->organizacijskaJedinicaToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->comboBox1 = (gcnew System::Windows::Forms::ComboBox());
-			this->label1 = (gcnew System::Windows::Forms::Label());
-			this->menuStrip1->SuspendLayout();
+			this->monthSelector = (gcnew System::Windows::Forms::ComboBox());
+			this->monthLabel = (gcnew System::Windows::Forms::Label());
+			this->radnikNameLabel = (gcnew System::Windows::Forms::Label());
+			this->radnikName = (gcnew System::Windows::Forms::TextBox());
+			this->orgNameLabel = (gcnew System::Windows::Forms::Label());
+			this->orgName = (gcnew System::Windows::Forms::TextBox());
 			this->SuspendLayout();
 			// 
-			// menuStrip1
+			// monthSelector
 			// 
-			this->menuStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(1) { this->podaciToolStripMenuItem });
-			this->menuStrip1->Location = System::Drawing::Point(0, 0);
-			this->menuStrip1->Name = L"menuStrip1";
-			this->menuStrip1->Size = System::Drawing::Size(466, 24);
-			this->menuStrip1->TabIndex = 0;
-			this->menuStrip1->Text = L"menuStrip1";
-			// 
-			// podaciToolStripMenuItem
-			// 
-			this->podaciToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(2) {
-				this->radnikToolStripMenuItem,
-					this->organizacijskaJedinicaToolStripMenuItem
-			});
-			this->podaciToolStripMenuItem->Name = L"podaciToolStripMenuItem";
-			this->podaciToolStripMenuItem->Size = System::Drawing::Size(55, 20);
-			this->podaciToolStripMenuItem->Text = L"Podaci";
-			// 
-			// radnikToolStripMenuItem
-			// 
-			this->radnikToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(2) {
-				this->titulaImePrezimeToolStripMenuItem,
-					this->adresaToolStripMenuItem
-			});
-			this->radnikToolStripMenuItem->Name = L"radnikToolStripMenuItem";
-			this->radnikToolStripMenuItem->Size = System::Drawing::Size(194, 22);
-			this->radnikToolStripMenuItem->Text = L"Radnik";
-			// 
-			// titulaImePrezimeToolStripMenuItem
-			// 
-			this->titulaImePrezimeToolStripMenuItem->Name = L"titulaImePrezimeToolStripMenuItem";
-			this->titulaImePrezimeToolStripMenuItem->Size = System::Drawing::Size(180, 22);
-			this->titulaImePrezimeToolStripMenuItem->Text = L"Titula, ime, prezime";
-			// 
-			// adresaToolStripMenuItem
-			// 
-			this->adresaToolStripMenuItem->Name = L"adresaToolStripMenuItem";
-			this->adresaToolStripMenuItem->Size = System::Drawing::Size(180, 22);
-			this->adresaToolStripMenuItem->Text = L"Adresa";
-			// 
-			// organizacijskaJedinicaToolStripMenuItem
-			// 
-			this->organizacijskaJedinicaToolStripMenuItem->Name = L"organizacijskaJedinicaToolStripMenuItem";
-			this->organizacijskaJedinicaToolStripMenuItem->Size = System::Drawing::Size(194, 22);
-			this->organizacijskaJedinicaToolStripMenuItem->Text = L"Organizacijska jedinica";
-			// 
-			// comboBox1
-			// 
-			this->comboBox1->FormattingEnabled = true;
-			this->comboBox1->Items->AddRange(gcnew cli::array< System::Object^  >(12) {
+			this->monthSelector->FormattingEnabled = true;
+			this->monthSelector->Items->AddRange(gcnew cli::array< System::Object^  >(12) {
 				L"siječanj", L"veljača", L"ožujak", L"travanj",
 					L"svibanj", L"lipanj", L"srpanj", L"kolovoz", L"rujan", L"listopad", L"studeni", L"prosinac"
 			});
-			this->comboBox1->Location = System::Drawing::Point(15, 40);
-			this->comboBox1->Name = L"comboBox1";
-			this->comboBox1->Size = System::Drawing::Size(121, 21);
-			this->comboBox1->TabIndex = 1;
+			this->monthSelector->Location = System::Drawing::Point(12, 64);
+			this->monthSelector->Name = L"monthSelector";
+			this->monthSelector->Size = System::Drawing::Size(121, 21);
+			this->monthSelector->TabIndex = 1;
 			// 
-			// label1
+			// monthLabel
 			// 
-			this->label1->AutoSize = true;
-			this->label1->Location = System::Drawing::Point(12, 24);
-			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(41, 13);
-			this->label1->TabIndex = 2;
-			this->label1->Text = L"Mjesec";
+			this->monthLabel->AutoSize = true;
+			this->monthLabel->Location = System::Drawing::Point(9, 48);
+			this->monthLabel->Name = L"monthLabel";
+			this->monthLabel->Size = System::Drawing::Size(41, 13);
+			this->monthLabel->TabIndex = 2;
+			this->monthLabel->Text = L"Mjesec";
+			// 
+			// radnikNameLabel
+			// 
+			this->radnikNameLabel->AutoSize = true;
+			this->radnikNameLabel->Location = System::Drawing::Point(9, 9);
+			this->radnikNameLabel->Name = L"radnikNameLabel";
+			this->radnikNameLabel->Size = System::Drawing::Size(72, 13);
+			this->radnikNameLabel->TabIndex = 3;
+			this->radnikNameLabel->Text = L"Naziv radnika";
+			// 
+			// radnikName
+			// 
+			this->radnikName->Location = System::Drawing::Point(12, 25);
+			this->radnikName->Name = L"radnikName";
+			this->radnikName->Size = System::Drawing::Size(212, 20);
+			this->radnikName->TabIndex = 4;
+			// 
+			// orgNameLabel
+			// 
+			this->orgNameLabel->AutoSize = true;
+			this->orgNameLabel->Location = System::Drawing::Point(227, 9);
+			this->orgNameLabel->Name = L"orgNameLabel";
+			this->orgNameLabel->Size = System::Drawing::Size(115, 13);
+			this->orgNameLabel->TabIndex = 5;
+			this->orgNameLabel->Text = L"Organizacijska jedinica";
+			// 
+			// orgName
+			// 
+			this->orgName->Location = System::Drawing::Point(230, 25);
+			this->orgName->Name = L"orgName";
+			this->orgName->Size = System::Drawing::Size(224, 20);
+			this->orgName->TabIndex = 6;
 			// 
 			// mainForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->AutoSize = true;
 			this->ClientSize = System::Drawing::Size(466, 282);
-			this->Controls->Add(this->label1);
-			this->Controls->Add(this->comboBox1);
-			this->Controls->Add(this->menuStrip1);
-			this->MainMenuStrip = this->menuStrip1;
+			this->Controls->Add(this->orgName);
+			this->Controls->Add(this->orgNameLabel);
+			this->Controls->Add(this->radnikName);
+			this->Controls->Add(this->radnikNameLabel);
+			this->Controls->Add(this->monthLabel);
+			this->Controls->Add(this->monthSelector);
 			this->Name = L"mainForm";
+			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"Šihter - Početna";
-			this->menuStrip1->ResumeLayout(false);
-			this->menuStrip1->PerformLayout();
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
