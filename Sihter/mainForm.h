@@ -37,56 +37,40 @@ namespace Sihtor {
 	private: System::Windows::Forms::ComboBox^ monthSelector;
 	protected:
 
-
-
-
-
-
-
 	private: System::Windows::Forms::Label^ monthLabel;
 
 	private: System::Windows::Forms::Label^ radnikNameLabel;
 
-
 	private: System::Windows::Forms::TextBox^ radnikName;
 	private: System::Windows::Forms::Label^ orgNameLabel;
 
-
 	private: System::Windows::Forms::TextBox^ orgName;
-	private: System::Windows::Forms::TextBox^ textBox1;
-	private: System::Windows::Forms::TextBox^ textBox2;
-	private: System::Windows::Forms::Label^ workTimeStart;
-	private: System::Windows::Forms::Label^ workTimeEnd;
+	private: System::Windows::Forms::TextBox^ workTimeStart1;
+	private: System::Windows::Forms::TextBox^ workTimeEnd1;
+
+	private: System::Windows::Forms::Label^ workTimeStartLabel1;
+
+	private: System::Windows::Forms::Label^ workTimeEndLabel1;
+
 	private: System::Windows::Forms::GroupBox^ prvaSmjenaGroup;
-	private: System::Windows::Forms::TextBox^ textBox4;
-	private: System::Windows::Forms::TextBox^ textBox3;
-	private: System::Windows::Forms::Label^ label2;
-	private: System::Windows::Forms::Label^ label1;
+	private: System::Windows::Forms::TextBox^ workTimeEnd2;
+
+	private: System::Windows::Forms::TextBox^ workTimeStart2;
+
+	private: System::Windows::Forms::Label^ workTimeStartLabel2;
+
+	private: System::Windows::Forms::Label^ workTimeEndLabel2;
+
 	private: System::Windows::Forms::GroupBox^ drugaSmjenaGroup;
 	private: System::Windows::Forms::GroupBox^ groupBox1;
-	private: System::Windows::Forms::Label^ label3;
-	private: System::Windows::Forms::Label^ label4;
-	private: System::Windows::Forms::TextBox^ textBox5;
-	private: System::Windows::Forms::TextBox^ textBox6;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	private: System::Windows::Forms::Label^ workTimeEndLabel3;
+	private: System::Windows::Forms::Label^ workTimeStartLabel3;
+	private: System::Windows::Forms::TextBox^ workTimeStart3;
+	private: System::Windows::Forms::TextBox^ workTimeEnd3;
 
 	protected:
 
 	protected:
-
 
 	private:
 		/// <summary>
@@ -107,21 +91,21 @@ namespace Sihtor {
 			this->radnikName = (gcnew System::Windows::Forms::TextBox());
 			this->orgNameLabel = (gcnew System::Windows::Forms::Label());
 			this->orgName = (gcnew System::Windows::Forms::TextBox());
-			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
-			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
-			this->workTimeStart = (gcnew System::Windows::Forms::Label());
-			this->workTimeEnd = (gcnew System::Windows::Forms::Label());
+			this->workTimeStart1 = (gcnew System::Windows::Forms::TextBox());
+			this->workTimeEnd1 = (gcnew System::Windows::Forms::TextBox());
+			this->workTimeStartLabel1 = (gcnew System::Windows::Forms::Label());
+			this->workTimeEndLabel1 = (gcnew System::Windows::Forms::Label());
 			this->prvaSmjenaGroup = (gcnew System::Windows::Forms::GroupBox());
-			this->textBox4 = (gcnew System::Windows::Forms::TextBox());
-			this->textBox3 = (gcnew System::Windows::Forms::TextBox());
-			this->label2 = (gcnew System::Windows::Forms::Label());
-			this->label1 = (gcnew System::Windows::Forms::Label());
+			this->workTimeEnd2 = (gcnew System::Windows::Forms::TextBox());
+			this->workTimeStart2 = (gcnew System::Windows::Forms::TextBox());
+			this->workTimeStartLabel2 = (gcnew System::Windows::Forms::Label());
+			this->workTimeEndLabel2 = (gcnew System::Windows::Forms::Label());
 			this->drugaSmjenaGroup = (gcnew System::Windows::Forms::GroupBox());
 			this->groupBox1 = (gcnew System::Windows::Forms::GroupBox());
-			this->label3 = (gcnew System::Windows::Forms::Label());
-			this->label4 = (gcnew System::Windows::Forms::Label());
-			this->textBox5 = (gcnew System::Windows::Forms::TextBox());
-			this->textBox6 = (gcnew System::Windows::Forms::TextBox());
+			this->workTimeEndLabel3 = (gcnew System::Windows::Forms::Label());
+			this->workTimeStartLabel3 = (gcnew System::Windows::Forms::Label());
+			this->workTimeStart3 = (gcnew System::Windows::Forms::TextBox());
+			this->workTimeEnd3 = (gcnew System::Windows::Forms::TextBox());
 			this->prvaSmjenaGroup->SuspendLayout();
 			this->drugaSmjenaGroup->SuspendLayout();
 			this->groupBox1->SuspendLayout();
@@ -180,44 +164,44 @@ namespace Sihtor {
 			this->orgName->Size = System::Drawing::Size(224, 20);
 			this->orgName->TabIndex = 6;
 			// 
-			// textBox1
+			// workTimeStart1
 			// 
-			this->textBox1->Location = System::Drawing::Point(9, 34);
-			this->textBox1->Name = L"textBox1";
-			this->textBox1->Size = System::Drawing::Size(38, 20);
-			this->textBox1->TabIndex = 7;
+			this->workTimeStart1->Location = System::Drawing::Point(9, 34);
+			this->workTimeStart1->Name = L"workTimeStart1";
+			this->workTimeStart1->Size = System::Drawing::Size(38, 20);
+			this->workTimeStart1->TabIndex = 7;
 			// 
-			// textBox2
+			// workTimeEnd1
 			// 
-			this->textBox2->Location = System::Drawing::Point(9, 73);
-			this->textBox2->Name = L"textBox2";
-			this->textBox2->Size = System::Drawing::Size(38, 20);
-			this->textBox2->TabIndex = 8;
+			this->workTimeEnd1->Location = System::Drawing::Point(9, 73);
+			this->workTimeEnd1->Name = L"workTimeEnd1";
+			this->workTimeEnd1->Size = System::Drawing::Size(38, 20);
+			this->workTimeEnd1->TabIndex = 8;
 			// 
-			// workTimeStart
+			// workTimeStartLabel1
 			// 
-			this->workTimeStart->AutoSize = true;
-			this->workTimeStart->Location = System::Drawing::Point(6, 18);
-			this->workTimeStart->Name = L"workTimeStart";
-			this->workTimeStart->Size = System::Drawing::Size(127, 13);
-			this->workTimeStart->TabIndex = 9;
-			this->workTimeStart->Text = L"Početak radnog vremena";
+			this->workTimeStartLabel1->AutoSize = true;
+			this->workTimeStartLabel1->Location = System::Drawing::Point(6, 18);
+			this->workTimeStartLabel1->Name = L"workTimeStartLabel1";
+			this->workTimeStartLabel1->Size = System::Drawing::Size(127, 13);
+			this->workTimeStartLabel1->TabIndex = 9;
+			this->workTimeStartLabel1->Text = L"Početak radnog vremena";
 			// 
-			// workTimeEnd
+			// workTimeEndLabel1
 			// 
-			this->workTimeEnd->AutoSize = true;
-			this->workTimeEnd->Location = System::Drawing::Point(6, 57);
-			this->workTimeEnd->Name = L"workTimeEnd";
-			this->workTimeEnd->Size = System::Drawing::Size(135, 13);
-			this->workTimeEnd->TabIndex = 10;
-			this->workTimeEnd->Text = L"Završetak radnog vremena";
+			this->workTimeEndLabel1->AutoSize = true;
+			this->workTimeEndLabel1->Location = System::Drawing::Point(6, 57);
+			this->workTimeEndLabel1->Name = L"workTimeEndLabel1";
+			this->workTimeEndLabel1->Size = System::Drawing::Size(135, 13);
+			this->workTimeEndLabel1->TabIndex = 10;
+			this->workTimeEndLabel1->Text = L"Završetak radnog vremena";
 			// 
 			// prvaSmjenaGroup
 			// 
-			this->prvaSmjenaGroup->Controls->Add(this->workTimeEnd);
-			this->prvaSmjenaGroup->Controls->Add(this->workTimeStart);
-			this->prvaSmjenaGroup->Controls->Add(this->textBox1);
-			this->prvaSmjenaGroup->Controls->Add(this->textBox2);
+			this->prvaSmjenaGroup->Controls->Add(this->workTimeEndLabel1);
+			this->prvaSmjenaGroup->Controls->Add(this->workTimeStartLabel1);
+			this->prvaSmjenaGroup->Controls->Add(this->workTimeStart1);
+			this->prvaSmjenaGroup->Controls->Add(this->workTimeEnd1);
 			this->prvaSmjenaGroup->Location = System::Drawing::Point(15, 91);
 			this->prvaSmjenaGroup->Name = L"prvaSmjenaGroup";
 			this->prvaSmjenaGroup->Size = System::Drawing::Size(144, 103);
@@ -225,44 +209,44 @@ namespace Sihtor {
 			this->prvaSmjenaGroup->TabStop = false;
 			this->prvaSmjenaGroup->Text = L"Prva smjena";
 			// 
-			// textBox4
+			// workTimeEnd2
 			// 
-			this->textBox4->Location = System::Drawing::Point(9, 73);
-			this->textBox4->Name = L"textBox4";
-			this->textBox4->Size = System::Drawing::Size(38, 20);
-			this->textBox4->TabIndex = 8;
+			this->workTimeEnd2->Location = System::Drawing::Point(9, 73);
+			this->workTimeEnd2->Name = L"workTimeEnd2";
+			this->workTimeEnd2->Size = System::Drawing::Size(38, 20);
+			this->workTimeEnd2->TabIndex = 8;
 			// 
-			// textBox3
+			// workTimeStart2
 			// 
-			this->textBox3->Location = System::Drawing::Point(9, 34);
-			this->textBox3->Name = L"textBox3";
-			this->textBox3->Size = System::Drawing::Size(38, 20);
-			this->textBox3->TabIndex = 7;
+			this->workTimeStart2->Location = System::Drawing::Point(9, 34);
+			this->workTimeStart2->Name = L"workTimeStart2";
+			this->workTimeStart2->Size = System::Drawing::Size(38, 20);
+			this->workTimeStart2->TabIndex = 7;
 			// 
-			// label2
+			// workTimeStartLabel2
 			// 
-			this->label2->AutoSize = true;
-			this->label2->Location = System::Drawing::Point(6, 18);
-			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(127, 13);
-			this->label2->TabIndex = 9;
-			this->label2->Text = L"Početak radnog vremena";
+			this->workTimeStartLabel2->AutoSize = true;
+			this->workTimeStartLabel2->Location = System::Drawing::Point(6, 18);
+			this->workTimeStartLabel2->Name = L"workTimeStartLabel2";
+			this->workTimeStartLabel2->Size = System::Drawing::Size(127, 13);
+			this->workTimeStartLabel2->TabIndex = 9;
+			this->workTimeStartLabel2->Text = L"Početak radnog vremena";
 			// 
-			// label1
+			// workTimeEndLabel2
 			// 
-			this->label1->AutoSize = true;
-			this->label1->Location = System::Drawing::Point(6, 57);
-			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(135, 13);
-			this->label1->TabIndex = 10;
-			this->label1->Text = L"Završetak radnog vremena";
+			this->workTimeEndLabel2->AutoSize = true;
+			this->workTimeEndLabel2->Location = System::Drawing::Point(6, 57);
+			this->workTimeEndLabel2->Name = L"workTimeEndLabel2";
+			this->workTimeEndLabel2->Size = System::Drawing::Size(135, 13);
+			this->workTimeEndLabel2->TabIndex = 10;
+			this->workTimeEndLabel2->Text = L"Završetak radnog vremena";
 			// 
 			// drugaSmjenaGroup
 			// 
-			this->drugaSmjenaGroup->Controls->Add(this->label1);
-			this->drugaSmjenaGroup->Controls->Add(this->label2);
-			this->drugaSmjenaGroup->Controls->Add(this->textBox3);
-			this->drugaSmjenaGroup->Controls->Add(this->textBox4);
+			this->drugaSmjenaGroup->Controls->Add(this->workTimeEndLabel2);
+			this->drugaSmjenaGroup->Controls->Add(this->workTimeStartLabel2);
+			this->drugaSmjenaGroup->Controls->Add(this->workTimeStart2);
+			this->drugaSmjenaGroup->Controls->Add(this->workTimeEnd2);
 			this->drugaSmjenaGroup->Location = System::Drawing::Point(165, 91);
 			this->drugaSmjenaGroup->Name = L"drugaSmjenaGroup";
 			this->drugaSmjenaGroup->Size = System::Drawing::Size(144, 103);
@@ -272,10 +256,10 @@ namespace Sihtor {
 			// 
 			// groupBox1
 			// 
-			this->groupBox1->Controls->Add(this->label3);
-			this->groupBox1->Controls->Add(this->label4);
-			this->groupBox1->Controls->Add(this->textBox5);
-			this->groupBox1->Controls->Add(this->textBox6);
+			this->groupBox1->Controls->Add(this->workTimeEndLabel3);
+			this->groupBox1->Controls->Add(this->workTimeStartLabel3);
+			this->groupBox1->Controls->Add(this->workTimeStart3);
+			this->groupBox1->Controls->Add(this->workTimeEnd3);
 			this->groupBox1->Location = System::Drawing::Point(315, 91);
 			this->groupBox1->Name = L"groupBox1";
 			this->groupBox1->Size = System::Drawing::Size(144, 103);
@@ -283,37 +267,37 @@ namespace Sihtor {
 			this->groupBox1->TabStop = false;
 			this->groupBox1->Text = L"Treća smjena";
 			// 
-			// label3
+			// workTimeEndLabel3
 			// 
-			this->label3->AutoSize = true;
-			this->label3->Location = System::Drawing::Point(6, 57);
-			this->label3->Name = L"label3";
-			this->label3->Size = System::Drawing::Size(135, 13);
-			this->label3->TabIndex = 10;
-			this->label3->Text = L"Završetak radnog vremena";
+			this->workTimeEndLabel3->AutoSize = true;
+			this->workTimeEndLabel3->Location = System::Drawing::Point(6, 57);
+			this->workTimeEndLabel3->Name = L"workTimeEndLabel3";
+			this->workTimeEndLabel3->Size = System::Drawing::Size(135, 13);
+			this->workTimeEndLabel3->TabIndex = 10;
+			this->workTimeEndLabel3->Text = L"Završetak radnog vremena";
 			// 
-			// label4
+			// workTimeStartLabel3
 			// 
-			this->label4->AutoSize = true;
-			this->label4->Location = System::Drawing::Point(6, 18);
-			this->label4->Name = L"label4";
-			this->label4->Size = System::Drawing::Size(127, 13);
-			this->label4->TabIndex = 9;
-			this->label4->Text = L"Početak radnog vremena";
+			this->workTimeStartLabel3->AutoSize = true;
+			this->workTimeStartLabel3->Location = System::Drawing::Point(6, 18);
+			this->workTimeStartLabel3->Name = L"workTimeStartLabel3";
+			this->workTimeStartLabel3->Size = System::Drawing::Size(127, 13);
+			this->workTimeStartLabel3->TabIndex = 9;
+			this->workTimeStartLabel3->Text = L"Početak radnog vremena";
 			// 
-			// textBox5
+			// workTimeStart3
 			// 
-			this->textBox5->Location = System::Drawing::Point(9, 34);
-			this->textBox5->Name = L"textBox5";
-			this->textBox5->Size = System::Drawing::Size(38, 20);
-			this->textBox5->TabIndex = 7;
+			this->workTimeStart3->Location = System::Drawing::Point(9, 34);
+			this->workTimeStart3->Name = L"workTimeStart3";
+			this->workTimeStart3->Size = System::Drawing::Size(38, 20);
+			this->workTimeStart3->TabIndex = 7;
 			// 
-			// textBox6
+			// workTimeEnd3
 			// 
-			this->textBox6->Location = System::Drawing::Point(9, 73);
-			this->textBox6->Name = L"textBox6";
-			this->textBox6->Size = System::Drawing::Size(38, 20);
-			this->textBox6->TabIndex = 8;
+			this->workTimeEnd3->Location = System::Drawing::Point(9, 73);
+			this->workTimeEnd3->Name = L"workTimeEnd3";
+			this->workTimeEnd3->Size = System::Drawing::Size(38, 20);
+			this->workTimeEnd3->TabIndex = 8;
 			// 
 			// mainForm
 			// 
