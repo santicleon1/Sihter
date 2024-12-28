@@ -145,5 +145,12 @@
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
+    <Import Project="..\packages\Spire.XLS.Cpp.14.4.2\build\native\Spire.XLS.Cpp.targets" Condition="Exists('..\packages\Spire.XLS.Cpp.14.4.2\build\native\Spire.XLS.Cpp.targets')" />
   </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Spire.XLS.Cpp.14.4.2\build\native\Spire.XLS.Cpp.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Spire.XLS.Cpp.14.4.2\build\native\Spire.XLS.Cpp.targets'))" />
+  </Target>
 </Project>

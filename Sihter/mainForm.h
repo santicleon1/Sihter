@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-namespace Sihtor {
+namespace Sihter {
 
 	using namespace System;
 	using namespace System::ComponentModel;
@@ -67,6 +67,8 @@ namespace Sihtor {
 	private: System::Windows::Forms::Label^ workTimeStartLabel3;
 	private: System::Windows::Forms::TextBox^ workTimeStart3;
 	private: System::Windows::Forms::TextBox^ workTimeEnd3;
+	private: System::Windows::Forms::Button^ doneButton;
+
 
 	protected:
 
@@ -106,6 +108,7 @@ namespace Sihtor {
 			this->workTimeStartLabel3 = (gcnew System::Windows::Forms::Label());
 			this->workTimeStart3 = (gcnew System::Windows::Forms::TextBox());
 			this->workTimeEnd3 = (gcnew System::Windows::Forms::TextBox());
+			this->doneButton = (gcnew System::Windows::Forms::Button());
 			this->prvaSmjenaGroup->SuspendLayout();
 			this->drugaSmjenaGroup->SuspendLayout();
 			this->groupBox1->SuspendLayout();
@@ -299,12 +302,23 @@ namespace Sihtor {
 			this->workTimeEnd3->Size = System::Drawing::Size(38, 20);
 			this->workTimeEnd3->TabIndex = 8;
 			// 
+			// doneButton
+			// 
+			this->doneButton->Location = System::Drawing::Point(381, 221);
+			this->doneButton->Name = L"doneButton";
+			this->doneButton->Size = System::Drawing::Size(75, 23);
+			this->doneButton->TabIndex = 14;
+			this->doneButton->Text = L"Gotovo";
+			this->doneButton->UseVisualStyleBackColor = true;
+			this->doneButton->Click += gcnew System::EventHandler(this, &mainForm::doneButton_Click);
+			// 
 			// mainForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->AutoSize = true;
 			this->ClientSize = System::Drawing::Size(468, 256);
+			this->Controls->Add(this->doneButton);
 			this->Controls->Add(this->groupBox1);
 			this->Controls->Add(this->drugaSmjenaGroup);
 			this->Controls->Add(this->orgName);
@@ -328,5 +342,11 @@ namespace Sihtor {
 
 		}
 #pragma endregion
+
+void getUserInput();
+
+private: System::Void doneButton_Click(System::Object^ sender, System::EventArgs^ e) {
+	getUserInput();
+}
 };
 }
