@@ -81,6 +81,10 @@ namespace Sihter {
 	private: System::Windows::Forms::Label^ yearLabel;
 	private: System::Windows::Forms::TextBox^ year;
 	private: System::Windows::Forms::Label^ label1;
+	private: System::Windows::Forms::MenuStrip^ menuStrip1;
+	private: System::Windows::Forms::ToolStripMenuItem^ višeToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ gitHubToolStripMenuItem;
+
 
 
 
@@ -127,6 +131,9 @@ namespace Sihter {
 			this->yearLabel = (gcnew System::Windows::Forms::Label());
 			this->year = (gcnew System::Windows::Forms::TextBox());
 			this->label1 = (gcnew System::Windows::Forms::Label());
+			this->menuStrip1 = (gcnew System::Windows::Forms::MenuStrip());
+			this->višeToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->gitHubToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->prvaSmjenaGroup->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->workTimeEnd1))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->workTimeStart1))->BeginInit();
@@ -136,6 +143,7 @@ namespace Sihter {
 			this->groupBox1->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->workTimeEnd3))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->workTimeStart3))->BeginInit();
+			this->menuStrip1->SuspendLayout();
 			this->SuspendLayout();
 			// 
 			// monthSelector
@@ -145,7 +153,7 @@ namespace Sihter {
 				L"siječanj", L"veljača", L"ožujak", L"travanj",
 					L"svibanj", L"lipanj", L"srpanj", L"kolovoz", L"rujan", L"listopad", L"studeni", L"prosinac"
 			});
-			this->monthSelector->Location = System::Drawing::Point(15, 64);
+			this->monthSelector->Location = System::Drawing::Point(14, 79);
 			this->monthSelector->Name = L"monthSelector";
 			this->monthSelector->Size = System::Drawing::Size(69, 21);
 			this->monthSelector->TabIndex = 1;
@@ -153,7 +161,7 @@ namespace Sihter {
 			// monthLabel
 			// 
 			this->monthLabel->AutoSize = true;
-			this->monthLabel->Location = System::Drawing::Point(12, 48);
+			this->monthLabel->Location = System::Drawing::Point(11, 63);
 			this->monthLabel->Name = L"monthLabel";
 			this->monthLabel->Size = System::Drawing::Size(41, 13);
 			this->monthLabel->TabIndex = 2;
@@ -162,7 +170,7 @@ namespace Sihter {
 			// radnikNameLabel
 			// 
 			this->radnikNameLabel->AutoSize = true;
-			this->radnikNameLabel->Location = System::Drawing::Point(12, 9);
+			this->radnikNameLabel->Location = System::Drawing::Point(12, 24);
 			this->radnikNameLabel->Name = L"radnikNameLabel";
 			this->radnikNameLabel->Size = System::Drawing::Size(72, 13);
 			this->radnikNameLabel->TabIndex = 3;
@@ -170,7 +178,7 @@ namespace Sihter {
 			// 
 			// radnikName
 			// 
-			this->radnikName->Location = System::Drawing::Point(15, 25);
+			this->radnikName->Location = System::Drawing::Point(14, 40);
 			this->radnikName->Name = L"radnikName";
 			this->radnikName->Size = System::Drawing::Size(212, 20);
 			this->radnikName->TabIndex = 4;
@@ -178,7 +186,7 @@ namespace Sihter {
 			// orgNameLabel
 			// 
 			this->orgNameLabel->AutoSize = true;
-			this->orgNameLabel->Location = System::Drawing::Point(230, 9);
+			this->orgNameLabel->Location = System::Drawing::Point(229, 24);
 			this->orgNameLabel->Name = L"orgNameLabel";
 			this->orgNameLabel->Size = System::Drawing::Size(115, 13);
 			this->orgNameLabel->TabIndex = 5;
@@ -186,7 +194,7 @@ namespace Sihter {
 			// 
 			// orgName
 			// 
-			this->orgName->Location = System::Drawing::Point(233, 25);
+			this->orgName->Location = System::Drawing::Point(232, 40);
 			this->orgName->Name = L"orgName";
 			this->orgName->Size = System::Drawing::Size(224, 20);
 			this->orgName->TabIndex = 6;
@@ -215,7 +223,7 @@ namespace Sihter {
 			this->prvaSmjenaGroup->Controls->Add(this->workTimeStart1);
 			this->prvaSmjenaGroup->Controls->Add(this->workTimeEndLabel1);
 			this->prvaSmjenaGroup->Controls->Add(this->workTimeStartLabel1);
-			this->prvaSmjenaGroup->Location = System::Drawing::Point(15, 91);
+			this->prvaSmjenaGroup->Location = System::Drawing::Point(14, 106);
 			this->prvaSmjenaGroup->Name = L"prvaSmjenaGroup";
 			this->prvaSmjenaGroup->Size = System::Drawing::Size(144, 103);
 			this->prvaSmjenaGroup->TabIndex = 11;
@@ -266,7 +274,7 @@ namespace Sihter {
 			this->drugaSmjenaGroup->Controls->Add(this->workTimeStart2);
 			this->drugaSmjenaGroup->Controls->Add(this->workTimeEndLabel2);
 			this->drugaSmjenaGroup->Controls->Add(this->workTimeStartLabel2);
-			this->drugaSmjenaGroup->Location = System::Drawing::Point(165, 91);
+			this->drugaSmjenaGroup->Location = System::Drawing::Point(164, 106);
 			this->drugaSmjenaGroup->Name = L"drugaSmjenaGroup";
 			this->drugaSmjenaGroup->Size = System::Drawing::Size(144, 103);
 			this->drugaSmjenaGroup->TabIndex = 12;
@@ -299,7 +307,7 @@ namespace Sihter {
 			this->groupBox1->Controls->Add(this->workTimeStart3);
 			this->groupBox1->Controls->Add(this->workTimeEndLabel3);
 			this->groupBox1->Controls->Add(this->workTimeStartLabel3);
-			this->groupBox1->Location = System::Drawing::Point(315, 91);
+			this->groupBox1->Location = System::Drawing::Point(314, 106);
 			this->groupBox1->Name = L"groupBox1";
 			this->groupBox1->Size = System::Drawing::Size(144, 103);
 			this->groupBox1->TabIndex = 13;
@@ -346,7 +354,7 @@ namespace Sihter {
 			// 
 			// doneButton
 			// 
-			this->doneButton->Location = System::Drawing::Point(387, 221);
+			this->doneButton->Location = System::Drawing::Point(386, 236);
 			this->doneButton->Name = L"doneButton";
 			this->doneButton->Size = System::Drawing::Size(75, 23);
 			this->doneButton->TabIndex = 14;
@@ -357,7 +365,7 @@ namespace Sihter {
 			// yearLabel
 			// 
 			this->yearLabel->AutoSize = true;
-			this->yearLabel->Location = System::Drawing::Point(87, 48);
+			this->yearLabel->Location = System::Drawing::Point(86, 63);
 			this->yearLabel->Name = L"yearLabel";
 			this->yearLabel->Size = System::Drawing::Size(41, 13);
 			this->yearLabel->TabIndex = 16;
@@ -365,7 +373,7 @@ namespace Sihter {
 			// 
 			// year
 			// 
-			this->year->Location = System::Drawing::Point(90, 65);
+			this->year->Location = System::Drawing::Point(89, 80);
 			this->year->Name = L"year";
 			this->year->Size = System::Drawing::Size(69, 20);
 			this->year->TabIndex = 17;
@@ -374,18 +382,42 @@ namespace Sihter {
 			// 
 			this->label1->AutoSize = true;
 			this->label1->ForeColor = System::Drawing::Color::Red;
-			this->label1->Location = System::Drawing::Point(12, 218);
+			this->label1->Location = System::Drawing::Point(12, 233);
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(219, 26);
 			this->label1->TabIndex = 18;
 			this->label1->Text = L"Potrebno je stisnuti Ctrl+Alt+F9\r\nda bi se automatski sve izračunalo u Excel-u!";
+			// 
+			// menuStrip1
+			// 
+			this->menuStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(1) { this->višeToolStripMenuItem });
+			this->menuStrip1->Location = System::Drawing::Point(0, 0);
+			this->menuStrip1->Name = L"menuStrip1";
+			this->menuStrip1->RenderMode = System::Windows::Forms::ToolStripRenderMode::Professional;
+			this->menuStrip1->Size = System::Drawing::Size(474, 24);
+			this->menuStrip1->TabIndex = 19;
+			this->menuStrip1->Text = L"menuStrip1";
+			// 
+			// višeToolStripMenuItem
+			// 
+			this->višeToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(1) { this->gitHubToolStripMenuItem });
+			this->višeToolStripMenuItem->Name = L"višeToolStripMenuItem";
+			this->višeToolStripMenuItem->Size = System::Drawing::Size(40, 20);
+			this->višeToolStripMenuItem->Text = L"Više";
+			// 
+			// gitHubToolStripMenuItem
+			// 
+			this->gitHubToolStripMenuItem->Name = L"gitHubToolStripMenuItem";
+			this->gitHubToolStripMenuItem->Size = System::Drawing::Size(180, 22);
+			this->gitHubToolStripMenuItem->Text = L"GitHub";
+			this->gitHubToolStripMenuItem->Click += gcnew System::EventHandler(this, &mainForm::gitHubToolStripMenuItem_Click);
 			// 
 			// mainForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->AutoSize = true;
-			this->ClientSize = System::Drawing::Size(474, 256);
+			this->ClientSize = System::Drawing::Size(474, 274);
 			this->Controls->Add(this->label1);
 			this->Controls->Add(this->year);
 			this->Controls->Add(this->yearLabel);
@@ -399,6 +431,7 @@ namespace Sihter {
 			this->Controls->Add(this->monthLabel);
 			this->Controls->Add(this->monthSelector);
 			this->Controls->Add(this->prvaSmjenaGroup);
+			this->Controls->Add(this->menuStrip1);
 			this->Name = L"mainForm";
 			this->ShowIcon = false;
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
@@ -415,6 +448,8 @@ namespace Sihter {
 			this->groupBox1->PerformLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->workTimeEnd3))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->workTimeStart3))->EndInit();
+			this->menuStrip1->ResumeLayout(false);
+			this->menuStrip1->PerformLayout();
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
@@ -425,6 +460,9 @@ void getUserInput();
 
 private: System::Void doneButton_Click(System::Object^ sender, System::EventArgs^ e) {
 	getUserInput();
+}
+private: System::Void gitHubToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+	System::Diagnostics::Process::Start("https://github.com/santicleon1/Sihter");
 }
 };
 }
