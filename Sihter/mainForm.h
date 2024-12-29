@@ -80,6 +80,7 @@ namespace Sihter {
 	private: System::Windows::Forms::NumericUpDown^ workTimeStart3;
 	private: System::Windows::Forms::Label^ yearLabel;
 	private: System::Windows::Forms::TextBox^ year;
+	private: System::Windows::Forms::Label^ label1;
 
 
 
@@ -125,6 +126,7 @@ namespace Sihter {
 			this->doneButton = (gcnew System::Windows::Forms::Button());
 			this->yearLabel = (gcnew System::Windows::Forms::Label());
 			this->year = (gcnew System::Windows::Forms::TextBox());
+			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->prvaSmjenaGroup->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->workTimeEnd1))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->workTimeStart1))->BeginInit();
@@ -344,7 +346,7 @@ namespace Sihter {
 			// 
 			// doneButton
 			// 
-			this->doneButton->Location = System::Drawing::Point(381, 221);
+			this->doneButton->Location = System::Drawing::Point(387, 221);
 			this->doneButton->Name = L"doneButton";
 			this->doneButton->Size = System::Drawing::Size(75, 23);
 			this->doneButton->TabIndex = 14;
@@ -368,12 +370,23 @@ namespace Sihter {
 			this->year->Size = System::Drawing::Size(69, 20);
 			this->year->TabIndex = 17;
 			// 
+			// label1
+			// 
+			this->label1->AutoSize = true;
+			this->label1->ForeColor = System::Drawing::Color::Red;
+			this->label1->Location = System::Drawing::Point(12, 218);
+			this->label1->Name = L"label1";
+			this->label1->Size = System::Drawing::Size(219, 26);
+			this->label1->TabIndex = 18;
+			this->label1->Text = L"Potrebno je stisnuti Ctrl+Alt+F9\r\nda bi se automatski sve izračunalo u Excel-u!";
+			// 
 			// mainForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->AutoSize = true;
-			this->ClientSize = System::Drawing::Size(468, 256);
+			this->ClientSize = System::Drawing::Size(474, 256);
+			this->Controls->Add(this->label1);
 			this->Controls->Add(this->year);
 			this->Controls->Add(this->yearLabel);
 			this->Controls->Add(this->doneButton);

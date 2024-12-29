@@ -17,11 +17,16 @@ int main(array<System::String^>^ args)
     return 0;
 }
 
-LPCWSTR ConvertString(System::String^ String)
-{
-    std::wstring nativeWString = msclr::interop::marshal_as<std::wstring>(String);
+std::wstring globalWString;
 
-    return nativeWString.c_str();
+LPCWSTR ConvertString(LPCWSTR_S loreStr,System::String^ input)
+{
+    if (String::IsNullOrEmpty(input))
+        return L"";
+
+    globalWString = loreStr + msclr::interop::marshal_as<std::wstring>(input);
+
+    return globalWString.c_str();
 }
 
 void Sihter::mainForm::getUserInput()
@@ -38,7 +43,18 @@ void Sihter::mainForm::getUserInput()
     // workbookEnd
 
     // changes to sheet
-    Sihterica_sheet->GetRange(6, 5)->SetNumberValue(Convert::ToDouble(workTimeStart1->Value));
+    Sihterica_sheet->GetRange(L"R1")->SetValue((ConvertString(L"Org. jedinica: ", orgName->Text)));
+    Sihterica_sheet->GetRange(L"A3")->SetValue((ConvertString(L"U mjesecu: ", monthSelector->Text)));
+    Sihterica_sheet->GetRange(L"D3")->SetValue((ConvertString(L"Godine: ", year->Text)));
+    Sihterica_sheet->GetRange(L"M3")->SetValue((ConvertString(L"Radnik/ca: ", radnikName->Text)));
+
+    int i;
+
+    for (i = 0;i < 31;i++)
+    {
+        Sihterica_sheet->GetRange(6, (i + 5))->SetNumberValue(Convert::ToDouble(workTimeStart1->Value));
+        Sihterica_sheet->GetRange(7, (i + 5))->SetNumberValue(Convert::ToDouble(workTimeEnd1->Value));
+    }
     // changesEnd
 
     // save
