@@ -45,17 +45,17 @@ namespace Sihter {
 	private: System::Windows::Forms::Label^ orgNameLabel;
 
 	private: System::Windows::Forms::TextBox^ orgName;
-	private: System::Windows::Forms::TextBox^ workTimeStart1;
-	private: System::Windows::Forms::TextBox^ workTimeEnd1;
+
+
 
 	private: System::Windows::Forms::Label^ workTimeStartLabel1;
 
 	private: System::Windows::Forms::Label^ workTimeEndLabel1;
 
 	private: System::Windows::Forms::GroupBox^ prvaSmjenaGroup;
-	private: System::Windows::Forms::TextBox^ workTimeEnd2;
 
-	private: System::Windows::Forms::TextBox^ workTimeStart2;
+
+
 
 	private: System::Windows::Forms::Label^ workTimeStartLabel2;
 
@@ -65,9 +65,23 @@ namespace Sihter {
 	private: System::Windows::Forms::GroupBox^ groupBox1;
 	private: System::Windows::Forms::Label^ workTimeEndLabel3;
 	private: System::Windows::Forms::Label^ workTimeStartLabel3;
-	private: System::Windows::Forms::TextBox^ workTimeStart3;
-	private: System::Windows::Forms::TextBox^ workTimeEnd3;
+
+
 	private: System::Windows::Forms::Button^ doneButton;
+	private: System::Windows::Forms::NumericUpDown^ workTimeStart1;
+	private: System::Windows::Forms::NumericUpDown^ workTimeEnd1;
+	private: System::Windows::Forms::NumericUpDown^ workTimeEnd2;
+
+
+	private: System::Windows::Forms::NumericUpDown^ workTimeStart2;
+	private: System::Windows::Forms::NumericUpDown^ workTimeEnd3;
+
+
+	private: System::Windows::Forms::NumericUpDown^ workTimeStart3;
+	private: System::Windows::Forms::Label^ yearLabel;
+	private: System::Windows::Forms::TextBox^ year;
+
+
 
 
 	protected:
@@ -93,25 +107,33 @@ namespace Sihter {
 			this->radnikName = (gcnew System::Windows::Forms::TextBox());
 			this->orgNameLabel = (gcnew System::Windows::Forms::Label());
 			this->orgName = (gcnew System::Windows::Forms::TextBox());
-			this->workTimeStart1 = (gcnew System::Windows::Forms::TextBox());
-			this->workTimeEnd1 = (gcnew System::Windows::Forms::TextBox());
 			this->workTimeStartLabel1 = (gcnew System::Windows::Forms::Label());
 			this->workTimeEndLabel1 = (gcnew System::Windows::Forms::Label());
 			this->prvaSmjenaGroup = (gcnew System::Windows::Forms::GroupBox());
-			this->workTimeEnd2 = (gcnew System::Windows::Forms::TextBox());
-			this->workTimeStart2 = (gcnew System::Windows::Forms::TextBox());
 			this->workTimeStartLabel2 = (gcnew System::Windows::Forms::Label());
 			this->workTimeEndLabel2 = (gcnew System::Windows::Forms::Label());
 			this->drugaSmjenaGroup = (gcnew System::Windows::Forms::GroupBox());
 			this->groupBox1 = (gcnew System::Windows::Forms::GroupBox());
 			this->workTimeEndLabel3 = (gcnew System::Windows::Forms::Label());
 			this->workTimeStartLabel3 = (gcnew System::Windows::Forms::Label());
-			this->workTimeStart3 = (gcnew System::Windows::Forms::TextBox());
-			this->workTimeEnd3 = (gcnew System::Windows::Forms::TextBox());
 			this->doneButton = (gcnew System::Windows::Forms::Button());
+			this->workTimeStart1 = (gcnew System::Windows::Forms::NumericUpDown());
+			this->workTimeEnd1 = (gcnew System::Windows::Forms::NumericUpDown());
+			this->workTimeStart2 = (gcnew System::Windows::Forms::NumericUpDown());
+			this->workTimeEnd2 = (gcnew System::Windows::Forms::NumericUpDown());
+			this->workTimeStart3 = (gcnew System::Windows::Forms::NumericUpDown());
+			this->workTimeEnd3 = (gcnew System::Windows::Forms::NumericUpDown());
+			this->yearLabel = (gcnew System::Windows::Forms::Label());
+			this->year = (gcnew System::Windows::Forms::TextBox());
 			this->prvaSmjenaGroup->SuspendLayout();
 			this->drugaSmjenaGroup->SuspendLayout();
 			this->groupBox1->SuspendLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->workTimeStart1))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->workTimeEnd1))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->workTimeStart2))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->workTimeEnd2))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->workTimeStart3))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->workTimeEnd3))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// monthSelector
@@ -167,20 +189,6 @@ namespace Sihter {
 			this->orgName->Size = System::Drawing::Size(224, 20);
 			this->orgName->TabIndex = 6;
 			// 
-			// workTimeStart1
-			// 
-			this->workTimeStart1->Location = System::Drawing::Point(9, 34);
-			this->workTimeStart1->Name = L"workTimeStart1";
-			this->workTimeStart1->Size = System::Drawing::Size(38, 20);
-			this->workTimeStart1->TabIndex = 7;
-			// 
-			// workTimeEnd1
-			// 
-			this->workTimeEnd1->Location = System::Drawing::Point(9, 73);
-			this->workTimeEnd1->Name = L"workTimeEnd1";
-			this->workTimeEnd1->Size = System::Drawing::Size(38, 20);
-			this->workTimeEnd1->TabIndex = 8;
-			// 
 			// workTimeStartLabel1
 			// 
 			this->workTimeStartLabel1->AutoSize = true;
@@ -201,30 +209,16 @@ namespace Sihter {
 			// 
 			// prvaSmjenaGroup
 			// 
+			this->prvaSmjenaGroup->Controls->Add(this->workTimeEnd1);
+			this->prvaSmjenaGroup->Controls->Add(this->workTimeStart1);
 			this->prvaSmjenaGroup->Controls->Add(this->workTimeEndLabel1);
 			this->prvaSmjenaGroup->Controls->Add(this->workTimeStartLabel1);
-			this->prvaSmjenaGroup->Controls->Add(this->workTimeStart1);
-			this->prvaSmjenaGroup->Controls->Add(this->workTimeEnd1);
 			this->prvaSmjenaGroup->Location = System::Drawing::Point(15, 91);
 			this->prvaSmjenaGroup->Name = L"prvaSmjenaGroup";
 			this->prvaSmjenaGroup->Size = System::Drawing::Size(144, 103);
 			this->prvaSmjenaGroup->TabIndex = 11;
 			this->prvaSmjenaGroup->TabStop = false;
 			this->prvaSmjenaGroup->Text = L"Prva smjena";
-			// 
-			// workTimeEnd2
-			// 
-			this->workTimeEnd2->Location = System::Drawing::Point(9, 73);
-			this->workTimeEnd2->Name = L"workTimeEnd2";
-			this->workTimeEnd2->Size = System::Drawing::Size(38, 20);
-			this->workTimeEnd2->TabIndex = 8;
-			// 
-			// workTimeStart2
-			// 
-			this->workTimeStart2->Location = System::Drawing::Point(9, 34);
-			this->workTimeStart2->Name = L"workTimeStart2";
-			this->workTimeStart2->Size = System::Drawing::Size(38, 20);
-			this->workTimeStart2->TabIndex = 7;
 			// 
 			// workTimeStartLabel2
 			// 
@@ -246,10 +240,10 @@ namespace Sihter {
 			// 
 			// drugaSmjenaGroup
 			// 
+			this->drugaSmjenaGroup->Controls->Add(this->workTimeEnd2);
+			this->drugaSmjenaGroup->Controls->Add(this->workTimeStart2);
 			this->drugaSmjenaGroup->Controls->Add(this->workTimeEndLabel2);
 			this->drugaSmjenaGroup->Controls->Add(this->workTimeStartLabel2);
-			this->drugaSmjenaGroup->Controls->Add(this->workTimeStart2);
-			this->drugaSmjenaGroup->Controls->Add(this->workTimeEnd2);
 			this->drugaSmjenaGroup->Location = System::Drawing::Point(165, 91);
 			this->drugaSmjenaGroup->Name = L"drugaSmjenaGroup";
 			this->drugaSmjenaGroup->Size = System::Drawing::Size(144, 103);
@@ -259,10 +253,10 @@ namespace Sihter {
 			// 
 			// groupBox1
 			// 
+			this->groupBox1->Controls->Add(this->workTimeEnd3);
+			this->groupBox1->Controls->Add(this->workTimeStart3);
 			this->groupBox1->Controls->Add(this->workTimeEndLabel3);
 			this->groupBox1->Controls->Add(this->workTimeStartLabel3);
-			this->groupBox1->Controls->Add(this->workTimeStart3);
-			this->groupBox1->Controls->Add(this->workTimeEnd3);
 			this->groupBox1->Location = System::Drawing::Point(315, 91);
 			this->groupBox1->Name = L"groupBox1";
 			this->groupBox1->Size = System::Drawing::Size(144, 103);
@@ -288,20 +282,6 @@ namespace Sihter {
 			this->workTimeStartLabel3->TabIndex = 9;
 			this->workTimeStartLabel3->Text = L"Početak radnog vremena";
 			// 
-			// workTimeStart3
-			// 
-			this->workTimeStart3->Location = System::Drawing::Point(9, 34);
-			this->workTimeStart3->Name = L"workTimeStart3";
-			this->workTimeStart3->Size = System::Drawing::Size(38, 20);
-			this->workTimeStart3->TabIndex = 7;
-			// 
-			// workTimeEnd3
-			// 
-			this->workTimeEnd3->Location = System::Drawing::Point(9, 73);
-			this->workTimeEnd3->Name = L"workTimeEnd3";
-			this->workTimeEnd3->Size = System::Drawing::Size(38, 20);
-			this->workTimeEnd3->TabIndex = 8;
-			// 
 			// doneButton
 			// 
 			this->doneButton->Location = System::Drawing::Point(381, 221);
@@ -312,12 +292,90 @@ namespace Sihter {
 			this->doneButton->UseVisualStyleBackColor = true;
 			this->doneButton->Click += gcnew System::EventHandler(this, &mainForm::doneButton_Click);
 			// 
+			// workTimeStart1
+			// 
+			this->workTimeStart1->DecimalPlaces = 1;
+			this->workTimeStart1->Increment = System::Decimal(gcnew cli::array< System::Int32 >(4) { 5, 0, 0, 65536 });
+			this->workTimeStart1->Location = System::Drawing::Point(9, 34);
+			this->workTimeStart1->Maximum = System::Decimal(gcnew cli::array< System::Int32 >(4) { 235, 0, 0, 65536 });
+			this->workTimeStart1->Name = L"workTimeStart1";
+			this->workTimeStart1->Size = System::Drawing::Size(47, 20);
+			this->workTimeStart1->TabIndex = 11;
+			// 
+			// workTimeEnd1
+			// 
+			this->workTimeEnd1->DecimalPlaces = 1;
+			this->workTimeEnd1->Increment = System::Decimal(gcnew cli::array< System::Int32 >(4) { 5, 0, 0, 65536 });
+			this->workTimeEnd1->Location = System::Drawing::Point(9, 73);
+			this->workTimeEnd1->Maximum = System::Decimal(gcnew cli::array< System::Int32 >(4) { 235, 0, 0, 65536 });
+			this->workTimeEnd1->Name = L"workTimeEnd1";
+			this->workTimeEnd1->Size = System::Drawing::Size(47, 20);
+			this->workTimeEnd1->TabIndex = 12;
+			// 
+			// workTimeStart2
+			// 
+			this->workTimeStart2->DecimalPlaces = 1;
+			this->workTimeStart2->Increment = System::Decimal(gcnew cli::array< System::Int32 >(4) { 5, 0, 0, 65536 });
+			this->workTimeStart2->Location = System::Drawing::Point(9, 34);
+			this->workTimeStart2->Maximum = System::Decimal(gcnew cli::array< System::Int32 >(4) { 235, 0, 0, 65536 });
+			this->workTimeStart2->Name = L"workTimeStart2";
+			this->workTimeStart2->Size = System::Drawing::Size(47, 20);
+			this->workTimeStart2->TabIndex = 13;
+			// 
+			// workTimeEnd2
+			// 
+			this->workTimeEnd2->DecimalPlaces = 1;
+			this->workTimeEnd2->Increment = System::Decimal(gcnew cli::array< System::Int32 >(4) { 5, 0, 0, 65536 });
+			this->workTimeEnd2->Location = System::Drawing::Point(9, 73);
+			this->workTimeEnd2->Maximum = System::Decimal(gcnew cli::array< System::Int32 >(4) { 235, 0, 0, 65536 });
+			this->workTimeEnd2->Name = L"workTimeEnd2";
+			this->workTimeEnd2->Size = System::Drawing::Size(47, 20);
+			this->workTimeEnd2->TabIndex = 14;
+			// 
+			// workTimeStart3
+			// 
+			this->workTimeStart3->DecimalPlaces = 1;
+			this->workTimeStart3->Increment = System::Decimal(gcnew cli::array< System::Int32 >(4) { 5, 0, 0, 65536 });
+			this->workTimeStart3->Location = System::Drawing::Point(9, 34);
+			this->workTimeStart3->Maximum = System::Decimal(gcnew cli::array< System::Int32 >(4) { 235, 0, 0, 65536 });
+			this->workTimeStart3->Name = L"workTimeStart3";
+			this->workTimeStart3->Size = System::Drawing::Size(47, 20);
+			this->workTimeStart3->TabIndex = 15;
+			// 
+			// workTimeEnd3
+			// 
+			this->workTimeEnd3->DecimalPlaces = 1;
+			this->workTimeEnd3->Increment = System::Decimal(gcnew cli::array< System::Int32 >(4) { 5, 0, 0, 65536 });
+			this->workTimeEnd3->Location = System::Drawing::Point(9, 73);
+			this->workTimeEnd3->Maximum = System::Decimal(gcnew cli::array< System::Int32 >(4) { 235, 0, 0, 65536 });
+			this->workTimeEnd3->Name = L"workTimeEnd3";
+			this->workTimeEnd3->Size = System::Drawing::Size(47, 20);
+			this->workTimeEnd3->TabIndex = 16;
+			// 
+			// yearLabel
+			// 
+			this->yearLabel->AutoSize = true;
+			this->yearLabel->Location = System::Drawing::Point(87, 48);
+			this->yearLabel->Name = L"yearLabel";
+			this->yearLabel->Size = System::Drawing::Size(41, 13);
+			this->yearLabel->TabIndex = 16;
+			this->yearLabel->Text = L"Godina";
+			// 
+			// year
+			// 
+			this->year->Location = System::Drawing::Point(90, 65);
+			this->year->Name = L"year";
+			this->year->Size = System::Drawing::Size(69, 20);
+			this->year->TabIndex = 17;
+			// 
 			// mainForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->AutoSize = true;
 			this->ClientSize = System::Drawing::Size(468, 256);
+			this->Controls->Add(this->year);
+			this->Controls->Add(this->yearLabel);
 			this->Controls->Add(this->doneButton);
 			this->Controls->Add(this->groupBox1);
 			this->Controls->Add(this->drugaSmjenaGroup);
@@ -337,6 +395,12 @@ namespace Sihter {
 			this->drugaSmjenaGroup->PerformLayout();
 			this->groupBox1->ResumeLayout(false);
 			this->groupBox1->PerformLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->workTimeStart1))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->workTimeEnd1))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->workTimeStart2))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->workTimeEnd2))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->workTimeStart3))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->workTimeEnd3))->EndInit();
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
