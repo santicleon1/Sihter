@@ -84,6 +84,8 @@ namespace Sihter {
 	private: System::Windows::Forms::MenuStrip^ menuStrip1;
 	private: System::Windows::Forms::ToolStripMenuItem^ višeToolStripMenuItem;
 	private: System::Windows::Forms::ToolStripMenuItem^ gitHubToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ datotekaToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ otvoriŠihtericuToolStripMenuItem;
 
 
 
@@ -134,6 +136,8 @@ namespace Sihter {
 			this->menuStrip1 = (gcnew System::Windows::Forms::MenuStrip());
 			this->višeToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->gitHubToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->datotekaToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->otvoriŠihtericuToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->prvaSmjenaGroup->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->workTimeEnd1))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->workTimeStart1))->BeginInit();
@@ -390,7 +394,10 @@ namespace Sihter {
 			// 
 			// menuStrip1
 			// 
-			this->menuStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(1) { this->višeToolStripMenuItem });
+			this->menuStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(2) {
+				this->datotekaToolStripMenuItem,
+					this->višeToolStripMenuItem
+			});
 			this->menuStrip1->Location = System::Drawing::Point(0, 0);
 			this->menuStrip1->Name = L"menuStrip1";
 			this->menuStrip1->RenderMode = System::Windows::Forms::ToolStripRenderMode::Professional;
@@ -408,9 +415,23 @@ namespace Sihter {
 			// gitHubToolStripMenuItem
 			// 
 			this->gitHubToolStripMenuItem->Name = L"gitHubToolStripMenuItem";
-			this->gitHubToolStripMenuItem->Size = System::Drawing::Size(180, 22);
+			this->gitHubToolStripMenuItem->Size = System::Drawing::Size(112, 22);
 			this->gitHubToolStripMenuItem->Text = L"GitHub";
 			this->gitHubToolStripMenuItem->Click += gcnew System::EventHandler(this, &mainForm::gitHubToolStripMenuItem_Click);
+			// 
+			// datotekaToolStripMenuItem
+			// 
+			this->datotekaToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(1) { this->otvoriŠihtericuToolStripMenuItem });
+			this->datotekaToolStripMenuItem->Name = L"datotekaToolStripMenuItem";
+			this->datotekaToolStripMenuItem->Size = System::Drawing::Size(66, 20);
+			this->datotekaToolStripMenuItem->Text = L"Datoteka";
+			// 
+			// otvoriŠihtericuToolStripMenuItem
+			// 
+			this->otvoriŠihtericuToolStripMenuItem->Name = L"otvoriŠihtericuToolStripMenuItem";
+			this->otvoriŠihtericuToolStripMenuItem->Size = System::Drawing::Size(180, 22);
+			this->otvoriŠihtericuToolStripMenuItem->Text = L"Otvori šihtericu";
+			this->otvoriŠihtericuToolStripMenuItem->Click += gcnew System::EventHandler(this, &mainForm::otvoriŠihtericuToolStripMenuItem_Click);
 			// 
 			// mainForm
 			// 
@@ -463,6 +484,9 @@ private: System::Void doneButton_Click(System::Object^ sender, System::EventArgs
 }
 private: System::Void gitHubToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
 	System::Diagnostics::Process::Start("https://github.com/santicleon1/Sihter");
+}
+private: System::Void otvoriŠihtericuToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+	System::Diagnostics::Process::Start(".\\output\\Sihterica.xlsx");
 }
 };
 }

@@ -60,6 +60,6 @@ void Sihter::mainForm::getUserInput()
     // save
     Sihterica_book->SaveToFile(outputFile.c_str(), ExcelVersion::Version2016);
     Sihterica_book->Dispose();
-    MessageBox::Show("äihterica uspijeöno kreirana.", "äihter - Izrada", MessageBoxButtons::OK);
+    MessageBox::Show("äihterica uspijeöno kreirana.\n\näihterica je spremljena u ./output/ mapu.\n\néelite li otvoriti öihtericu?", "äihter - Izrada", MessageBoxButtons::OK, MessageBoxIcon::Asterisk);
     // saveEnd
 }
