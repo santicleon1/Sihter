@@ -5,6 +5,7 @@
 
 using namespace Sihter;
 using namespace Spire::Xls;
+using namespace System;
 
 [STAThread]
 int main(array<System::String^>^ args)
@@ -30,16 +31,19 @@ void Sihter::mainForm::getUserInput()
     std::wstring inputFile = L"input/SihtericaIN.xlsx";
     // pathsEnd
 
+    // workbook def
     intrusive_ptr<Workbook> Sihterica_book = new Workbook();
     Sihterica_book->LoadFromFile(inputFile.c_str());
-
     intrusive_ptr<Worksheet> Sihterica_sheet = dynamic_pointer_cast<Worksheet>(Sihterica_book->GetWorksheets()->Get(0));
+    // workbookEnd
+
     // changes to sheet
-    Sihterica_sheet->GetRange(6, 5)->SetNumberValue(System::Convert::ToDouble(workTimeStart1->Value));
+    Sihterica_sheet->GetRange(6, 5)->SetNumberValue(Convert::ToDouble(workTimeStart1->Value));
     // changesEnd
 
+    // save
     Sihterica_book->SaveToFile(outputFile.c_str(), ExcelVersion::Version2016);
     Sihterica_book->Dispose();
-
-    MessageBox::Show("Šihterica uspiješno napravljena.", "Šihter - Izrada", MessageBoxButtons::OK);
+    MessageBox::Show("Šihterica uspiješno kreirana.", "Šihter - Izrada", MessageBoxButtons::OK);
+    // saveEnd
 }
