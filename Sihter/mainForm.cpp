@@ -2,16 +2,29 @@
 #include "Spire.Xls.o.h"
 #include <msclr/marshal_cppstd.h>
 #include <string>
+#include <windows.h>
+#include <io.h>
+#include <fcntl.h>
 
 using namespace Sihter;
 using namespace Spire::Xls;
 using namespace System;
+
+void SetUTF8Environment()
+{
+    SetConsoleOutputCP(CP_UTF8);
+    SetConsoleCP(CP_UTF8);
+
+    _setmode(_fileno(stdout), _O_U8TEXT);
+    _setmode(_fileno(stdin), _O_U8TEXT);
+}
 
 [STAThread]
 int main(array<System::String^>^ args)
 {
     Application::EnableVisualStyles();
     Application::SetCompatibleTextRenderingDefault(false);
+    SetUTF8Environment();
 
     Application::Run(gcnew mainForm());
     return 0;
@@ -57,15 +70,30 @@ void Sihter::mainForm::getUserInput()
     progressBar->Value = 50;
 
     int i;
+    array<System::Windows::Forms::ComboBox^>^ smjenaBoxes = { smjenaBox1, smjenaBox2, smjenaBox3, smjenaBox4, smjenaBox5, smjenaBox6, smjenaBox7, smjenaBox8, smjenaBox9, smjenaBox10, smjenaBox11, smjenaBox12, smjenaBox13, smjenaBox14, smjenaBox15, smjenaBox16, smjenaBox17, smjenaBox18, smjenaBox19, smjenaBox20, smjenaBox21, smjenaBox22, smjenaBox23, smjenaBox24, smjenaBox25, smjenaBox26, smjenaBox27, smjenaBox28, smjenaBox29, smjenaBox30, smjenaBox31 };
 
     for (i = 0;i < 31;i++)
     {
-        Sihterica_sheet->GetRange(6, (i + 5))->SetNumberValue(Convert::ToDouble(workTimeStart1->Value));
-        Sihterica_sheet->GetRange(7, (i + 5))->SetNumberValue(Convert::ToDouble(workTimeEnd1->Value));
+        if (smjenaBoxes[i]->Text == L"Prva")
+        {
+            Sihterica_sheet->GetRange(6, (i + 5))->SetNumberValue(Convert::ToDouble(workTimeStart1->Value));
+            Sihterica_sheet->GetRange(7, (i + 5))->SetNumberValue(Convert::ToDouble(workTimeEnd1->Value));
+        }
+
+        else if (smjenaBoxes[i]->Text == L"Druga")
+        {
+            Sihterica_sheet->GetRange(6, (i + 5))->SetNumberValue(Convert::ToDouble(workTimeStart2->Value));
+            Sihterica_sheet->GetRange(7, (i + 5))->SetNumberValue(Convert::ToDouble(workTimeEnd2->Value));
+        }
+        
+        else if (smjenaBoxes[i]->Text == L"Treƒáa")
+        {
+            Sihterica_sheet->GetRange(6, (i + 5))->SetNumberValue(Convert::ToDouble(workTimeStart3->Value));
+            Sihterica_sheet->GetRange(7, (i + 5))->SetNumberValue(Convert::ToDouble(workTimeEnd3->Value));
+        }
     }
 
-    progressBar->Value = 80;
-
+    progressBar->Value = 95;
     // changesEnd
 
     // save
@@ -74,6 +102,6 @@ void Sihter::mainForm::getUserInput()
 
     progressBar->Value = 100;
 
-    MessageBox::Show("äihterica uspijeöno kreirana.\n\näihterica je spremljena u ./output/ mapu.", "äihter - Izrada", MessageBoxButtons::OK, MessageBoxIcon::Asterisk);
+    MessageBox::Show("≈†ihterica uspije≈°no kreirana.\n≈†ihterica je spremljena u ./output/ mapu.", "≈†ihter - Izrada", MessageBoxButtons::OK, MessageBoxIcon::Asterisk);
     // saveEnd
 }

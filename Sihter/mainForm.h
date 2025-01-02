@@ -217,38 +217,69 @@ namespace Sihter {
 
 
 private: System::Windows::Forms::Panel^ panel1;
-private: System::Windows::Forms::ComboBox^ comboBox1;
-private: System::Windows::Forms::ComboBox^ comboBox2;
+private: System::Windows::Forms::ComboBox^ smjenaBox1;
+private: System::Windows::Forms::ComboBox^ smjenaBox2;
+
+
 private: System::Windows::Forms::Label^ label3;
-private: System::Windows::Forms::ComboBox^ comboBox31;
-private: System::Windows::Forms::ComboBox^ comboBox19;
-private: System::Windows::Forms::ComboBox^ comboBox20;
-private: System::Windows::Forms::ComboBox^ comboBox21;
-private: System::Windows::Forms::ComboBox^ comboBox22;
-private: System::Windows::Forms::ComboBox^ comboBox23;
-private: System::Windows::Forms::ComboBox^ comboBox24;
-private: System::Windows::Forms::ComboBox^ comboBox25;
-private: System::Windows::Forms::ComboBox^ comboBox26;
-private: System::Windows::Forms::ComboBox^ comboBox27;
-private: System::Windows::Forms::ComboBox^ comboBox28;
-private: System::Windows::Forms::ComboBox^ comboBox29;
-private: System::Windows::Forms::ComboBox^ comboBox30;
-private: System::Windows::Forms::ComboBox^ comboBox10;
-private: System::Windows::Forms::ComboBox^ comboBox11;
-private: System::Windows::Forms::ComboBox^ comboBox12;
-private: System::Windows::Forms::ComboBox^ comboBox13;
-private: System::Windows::Forms::ComboBox^ comboBox14;
-private: System::Windows::Forms::ComboBox^ comboBox15;
-private: System::Windows::Forms::ComboBox^ comboBox16;
-private: System::Windows::Forms::ComboBox^ comboBox17;
-private: System::Windows::Forms::ComboBox^ comboBox18;
-private: System::Windows::Forms::ComboBox^ comboBox9;
-private: System::Windows::Forms::ComboBox^ comboBox8;
-private: System::Windows::Forms::ComboBox^ comboBox7;
-private: System::Windows::Forms::ComboBox^ comboBox6;
-private: System::Windows::Forms::ComboBox^ comboBox5;
-private: System::Windows::Forms::ComboBox^ comboBox4;
-private: System::Windows::Forms::ComboBox^ comboBox3;
+private: System::Windows::Forms::ComboBox^ smjenaBox30;
+private: System::Windows::Forms::ComboBox^ smjenaBox31;
+
+
+private: System::Windows::Forms::ComboBox^ smjenaBox29;
+
+private: System::Windows::Forms::ComboBox^ smjenaBox28;
+
+private: System::Windows::Forms::ComboBox^ smjenaBox27;
+
+private: System::Windows::Forms::ComboBox^ smjenaBox26;
+
+private: System::Windows::Forms::ComboBox^ smjenaBox25;
+
+private: System::Windows::Forms::ComboBox^ smjenaBox24;
+
+private: System::Windows::Forms::ComboBox^ smjenaBox23;
+
+private: System::Windows::Forms::ComboBox^ smjenaBox22;
+
+private: System::Windows::Forms::ComboBox^ smjenaBox21;
+
+private: System::Windows::Forms::ComboBox^ smjenaBox20;
+
+private: System::Windows::Forms::ComboBox^ smjenaBox19;
+
+private: System::Windows::Forms::ComboBox^ smjenaBox18;
+
+private: System::Windows::Forms::ComboBox^ smjenaBox17;
+
+private: System::Windows::Forms::ComboBox^ smjenaBox16;
+
+private: System::Windows::Forms::ComboBox^ smjenaBox15;
+
+private: System::Windows::Forms::ComboBox^ smjenaBox14;
+
+private: System::Windows::Forms::ComboBox^ smjenaBox13;
+
+private: System::Windows::Forms::ComboBox^ smjenaBox12;
+
+private: System::Windows::Forms::ComboBox^ smjenaBox11;
+
+private: System::Windows::Forms::ComboBox^ smjenaBox10;
+
+private: System::Windows::Forms::ComboBox^ smjenaBox9;
+
+private: System::Windows::Forms::ComboBox^ smjenaBox8;
+
+private: System::Windows::Forms::ComboBox^ smjenaBox7;
+
+private: System::Windows::Forms::ComboBox^ smjenaBox6;
+
+private: System::Windows::Forms::ComboBox^ smjenaBox5;
+
+private: System::Windows::Forms::ComboBox^ smjenaBox4;
+
+private: System::Windows::Forms::ComboBox^ smjenaBox3;
+
 
 
 
@@ -320,6 +351,38 @@ private: System::Windows::Forms::ComboBox^ comboBox3;
 			this->tabControl1 = (gcnew System::Windows::Forms::TabControl());
 			this->defaultInfoTab = (gcnew System::Windows::Forms::TabPage());
 			this->workTimeTab = (gcnew System::Windows::Forms::TabPage());
+			this->label3 = (gcnew System::Windows::Forms::Label());
+			this->smjenaBox30 = (gcnew System::Windows::Forms::ComboBox());
+			this->smjenaBox31 = (gcnew System::Windows::Forms::ComboBox());
+			this->smjenaBox29 = (gcnew System::Windows::Forms::ComboBox());
+			this->smjenaBox28 = (gcnew System::Windows::Forms::ComboBox());
+			this->smjenaBox27 = (gcnew System::Windows::Forms::ComboBox());
+			this->smjenaBox26 = (gcnew System::Windows::Forms::ComboBox());
+			this->smjenaBox25 = (gcnew System::Windows::Forms::ComboBox());
+			this->smjenaBox24 = (gcnew System::Windows::Forms::ComboBox());
+			this->smjenaBox23 = (gcnew System::Windows::Forms::ComboBox());
+			this->smjenaBox22 = (gcnew System::Windows::Forms::ComboBox());
+			this->smjenaBox21 = (gcnew System::Windows::Forms::ComboBox());
+			this->smjenaBox20 = (gcnew System::Windows::Forms::ComboBox());
+			this->smjenaBox19 = (gcnew System::Windows::Forms::ComboBox());
+			this->smjenaBox18 = (gcnew System::Windows::Forms::ComboBox());
+			this->smjenaBox17 = (gcnew System::Windows::Forms::ComboBox());
+			this->smjenaBox16 = (gcnew System::Windows::Forms::ComboBox());
+			this->smjenaBox15 = (gcnew System::Windows::Forms::ComboBox());
+			this->smjenaBox14 = (gcnew System::Windows::Forms::ComboBox());
+			this->smjenaBox13 = (gcnew System::Windows::Forms::ComboBox());
+			this->smjenaBox12 = (gcnew System::Windows::Forms::ComboBox());
+			this->smjenaBox11 = (gcnew System::Windows::Forms::ComboBox());
+			this->smjenaBox10 = (gcnew System::Windows::Forms::ComboBox());
+			this->smjenaBox9 = (gcnew System::Windows::Forms::ComboBox());
+			this->smjenaBox8 = (gcnew System::Windows::Forms::ComboBox());
+			this->smjenaBox7 = (gcnew System::Windows::Forms::ComboBox());
+			this->smjenaBox6 = (gcnew System::Windows::Forms::ComboBox());
+			this->smjenaBox5 = (gcnew System::Windows::Forms::ComboBox());
+			this->smjenaBox4 = (gcnew System::Windows::Forms::ComboBox());
+			this->smjenaBox3 = (gcnew System::Windows::Forms::ComboBox());
+			this->smjenaBox2 = (gcnew System::Windows::Forms::ComboBox());
+			this->smjenaBox1 = (gcnew System::Windows::Forms::ComboBox());
 			this->label21 = (gcnew System::Windows::Forms::Label());
 			this->label22 = (gcnew System::Windows::Forms::Label());
 			this->label23 = (gcnew System::Windows::Forms::Label());
@@ -354,38 +417,6 @@ private: System::Windows::Forms::ComboBox^ comboBox3;
 			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->progressBar = (gcnew System::Windows::Forms::ProgressBar());
 			this->panel1 = (gcnew System::Windows::Forms::Panel());
-			this->comboBox1 = (gcnew System::Windows::Forms::ComboBox());
-			this->comboBox2 = (gcnew System::Windows::Forms::ComboBox());
-			this->comboBox3 = (gcnew System::Windows::Forms::ComboBox());
-			this->comboBox4 = (gcnew System::Windows::Forms::ComboBox());
-			this->comboBox5 = (gcnew System::Windows::Forms::ComboBox());
-			this->comboBox6 = (gcnew System::Windows::Forms::ComboBox());
-			this->comboBox7 = (gcnew System::Windows::Forms::ComboBox());
-			this->comboBox8 = (gcnew System::Windows::Forms::ComboBox());
-			this->comboBox9 = (gcnew System::Windows::Forms::ComboBox());
-			this->comboBox10 = (gcnew System::Windows::Forms::ComboBox());
-			this->comboBox11 = (gcnew System::Windows::Forms::ComboBox());
-			this->comboBox12 = (gcnew System::Windows::Forms::ComboBox());
-			this->comboBox13 = (gcnew System::Windows::Forms::ComboBox());
-			this->comboBox14 = (gcnew System::Windows::Forms::ComboBox());
-			this->comboBox15 = (gcnew System::Windows::Forms::ComboBox());
-			this->comboBox16 = (gcnew System::Windows::Forms::ComboBox());
-			this->comboBox17 = (gcnew System::Windows::Forms::ComboBox());
-			this->comboBox18 = (gcnew System::Windows::Forms::ComboBox());
-			this->comboBox19 = (gcnew System::Windows::Forms::ComboBox());
-			this->comboBox20 = (gcnew System::Windows::Forms::ComboBox());
-			this->comboBox21 = (gcnew System::Windows::Forms::ComboBox());
-			this->comboBox22 = (gcnew System::Windows::Forms::ComboBox());
-			this->comboBox23 = (gcnew System::Windows::Forms::ComboBox());
-			this->comboBox24 = (gcnew System::Windows::Forms::ComboBox());
-			this->comboBox25 = (gcnew System::Windows::Forms::ComboBox());
-			this->comboBox26 = (gcnew System::Windows::Forms::ComboBox());
-			this->comboBox27 = (gcnew System::Windows::Forms::ComboBox());
-			this->comboBox28 = (gcnew System::Windows::Forms::ComboBox());
-			this->comboBox29 = (gcnew System::Windows::Forms::ComboBox());
-			this->comboBox30 = (gcnew System::Windows::Forms::ComboBox());
-			this->comboBox31 = (gcnew System::Windows::Forms::ComboBox());
-			this->label3 = (gcnew System::Windows::Forms::Label());
 			this->prvaSmjenaGroup->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->workTimeEnd1))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->workTimeStart1))->BeginInit();
@@ -611,7 +642,7 @@ private: System::Windows::Forms::ComboBox^ comboBox3;
 			// doneButton
 			// 
 			this->doneButton->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Right));
-			this->doneButton->Location = System::Drawing::Point(877, 3);
+			this->doneButton->Location = System::Drawing::Point(829, 3);
 			this->doneButton->Name = L"doneButton";
 			this->doneButton->Size = System::Drawing::Size(75, 23);
 			this->doneButton->TabIndex = 14;
@@ -655,7 +686,7 @@ private: System::Windows::Forms::ComboBox^ comboBox3;
 			this->menuStrip1->Location = System::Drawing::Point(0, 0);
 			this->menuStrip1->Name = L"menuStrip1";
 			this->menuStrip1->RenderMode = System::Windows::Forms::ToolStripRenderMode::Professional;
-			this->menuStrip1->Size = System::Drawing::Size(959, 24);
+			this->menuStrip1->Size = System::Drawing::Size(911, 24);
 			this->menuStrip1->TabIndex = 19;
 			this->menuStrip1->Text = L"menuStrip1";
 			// 
@@ -697,12 +728,13 @@ private: System::Windows::Forms::ComboBox^ comboBox3;
 			this->tabControl1->Location = System::Drawing::Point(12, 27);
 			this->tabControl1->Name = L"tabControl1";
 			this->tabControl1->SelectedIndex = 0;
-			this->tabControl1->Size = System::Drawing::Size(935, 670);
+			this->tabControl1->Size = System::Drawing::Size(887, 612);
 			this->tabControl1->TabIndex = 20;
 			// 
 			// defaultInfoTab
 			// 
 			this->defaultInfoTab->BackColor = System::Drawing::SystemColors::Control;
+			this->defaultInfoTab->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
 			this->defaultInfoTab->Controls->Add(this->radnikNameLabel);
 			this->defaultInfoTab->Controls->Add(this->prvaSmjenaGroup);
 			this->defaultInfoTab->Controls->Add(this->year);
@@ -717,7 +749,7 @@ private: System::Windows::Forms::ComboBox^ comboBox3;
 			this->defaultInfoTab->Location = System::Drawing::Point(4, 22);
 			this->defaultInfoTab->Name = L"defaultInfoTab";
 			this->defaultInfoTab->Padding = System::Windows::Forms::Padding(3);
-			this->defaultInfoTab->Size = System::Drawing::Size(462, 203);
+			this->defaultInfoTab->Size = System::Drawing::Size(459, 201);
 			this->defaultInfoTab->TabIndex = 0;
 			this->defaultInfoTab->Text = L"Osnovni podaci";
 			// 
@@ -726,37 +758,37 @@ private: System::Windows::Forms::ComboBox^ comboBox3;
 			this->workTimeTab->AutoScroll = true;
 			this->workTimeTab->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
 			this->workTimeTab->Controls->Add(this->label3);
-			this->workTimeTab->Controls->Add(this->comboBox31);
-			this->workTimeTab->Controls->Add(this->comboBox19);
-			this->workTimeTab->Controls->Add(this->comboBox20);
-			this->workTimeTab->Controls->Add(this->comboBox21);
-			this->workTimeTab->Controls->Add(this->comboBox22);
-			this->workTimeTab->Controls->Add(this->comboBox23);
-			this->workTimeTab->Controls->Add(this->comboBox24);
-			this->workTimeTab->Controls->Add(this->comboBox25);
-			this->workTimeTab->Controls->Add(this->comboBox26);
-			this->workTimeTab->Controls->Add(this->comboBox27);
-			this->workTimeTab->Controls->Add(this->comboBox28);
-			this->workTimeTab->Controls->Add(this->comboBox29);
-			this->workTimeTab->Controls->Add(this->comboBox30);
-			this->workTimeTab->Controls->Add(this->comboBox10);
-			this->workTimeTab->Controls->Add(this->comboBox11);
-			this->workTimeTab->Controls->Add(this->comboBox12);
-			this->workTimeTab->Controls->Add(this->comboBox13);
-			this->workTimeTab->Controls->Add(this->comboBox14);
-			this->workTimeTab->Controls->Add(this->comboBox15);
-			this->workTimeTab->Controls->Add(this->comboBox16);
-			this->workTimeTab->Controls->Add(this->comboBox17);
-			this->workTimeTab->Controls->Add(this->comboBox18);
-			this->workTimeTab->Controls->Add(this->comboBox9);
-			this->workTimeTab->Controls->Add(this->comboBox8);
-			this->workTimeTab->Controls->Add(this->comboBox7);
-			this->workTimeTab->Controls->Add(this->comboBox6);
-			this->workTimeTab->Controls->Add(this->comboBox5);
-			this->workTimeTab->Controls->Add(this->comboBox4);
-			this->workTimeTab->Controls->Add(this->comboBox3);
-			this->workTimeTab->Controls->Add(this->comboBox2);
-			this->workTimeTab->Controls->Add(this->comboBox1);
+			this->workTimeTab->Controls->Add(this->smjenaBox30);
+			this->workTimeTab->Controls->Add(this->smjenaBox31);
+			this->workTimeTab->Controls->Add(this->smjenaBox29);
+			this->workTimeTab->Controls->Add(this->smjenaBox28);
+			this->workTimeTab->Controls->Add(this->smjenaBox27);
+			this->workTimeTab->Controls->Add(this->smjenaBox26);
+			this->workTimeTab->Controls->Add(this->smjenaBox25);
+			this->workTimeTab->Controls->Add(this->smjenaBox24);
+			this->workTimeTab->Controls->Add(this->smjenaBox23);
+			this->workTimeTab->Controls->Add(this->smjenaBox22);
+			this->workTimeTab->Controls->Add(this->smjenaBox21);
+			this->workTimeTab->Controls->Add(this->smjenaBox20);
+			this->workTimeTab->Controls->Add(this->smjenaBox19);
+			this->workTimeTab->Controls->Add(this->smjenaBox18);
+			this->workTimeTab->Controls->Add(this->smjenaBox17);
+			this->workTimeTab->Controls->Add(this->smjenaBox16);
+			this->workTimeTab->Controls->Add(this->smjenaBox15);
+			this->workTimeTab->Controls->Add(this->smjenaBox14);
+			this->workTimeTab->Controls->Add(this->smjenaBox13);
+			this->workTimeTab->Controls->Add(this->smjenaBox12);
+			this->workTimeTab->Controls->Add(this->smjenaBox11);
+			this->workTimeTab->Controls->Add(this->smjenaBox10);
+			this->workTimeTab->Controls->Add(this->smjenaBox9);
+			this->workTimeTab->Controls->Add(this->smjenaBox8);
+			this->workTimeTab->Controls->Add(this->smjenaBox7);
+			this->workTimeTab->Controls->Add(this->smjenaBox6);
+			this->workTimeTab->Controls->Add(this->smjenaBox5);
+			this->workTimeTab->Controls->Add(this->smjenaBox4);
+			this->workTimeTab->Controls->Add(this->smjenaBox3);
+			this->workTimeTab->Controls->Add(this->smjenaBox2);
+			this->workTimeTab->Controls->Add(this->smjenaBox1);
 			this->workTimeTab->Controls->Add(this->label21);
 			this->workTimeTab->Controls->Add(this->label22);
 			this->workTimeTab->Controls->Add(this->label23);
@@ -792,10 +824,298 @@ private: System::Windows::Forms::ComboBox^ comboBox3;
 			this->workTimeTab->Location = System::Drawing::Point(4, 22);
 			this->workTimeTab->Name = L"workTimeTab";
 			this->workTimeTab->Padding = System::Windows::Forms::Padding(3);
-			this->workTimeTab->Size = System::Drawing::Size(927, 644);
+			this->workTimeTab->Size = System::Drawing::Size(879, 586);
 			this->workTimeTab->TabIndex = 1;
 			this->workTimeTab->Text = L"Vrijeme rada";
 			this->workTimeTab->UseVisualStyleBackColor = true;
+			// 
+			// label3
+			// 
+			this->label3->AutoSize = true;
+			this->label3->Location = System::Drawing::Point(50, 3);
+			this->label3->Name = L"label3";
+			this->label3->Size = System::Drawing::Size(42, 13);
+			this->label3->TabIndex = 95;
+			this->label3->Text = L"Smjena";
+			// 
+			// smjenaBox30
+			// 
+			this->smjenaBox30->FormattingEnabled = true;
+			this->smjenaBox30->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"Prva", L"Druga", L"Treća" });
+			this->smjenaBox30->Location = System::Drawing::Point(46, 802);
+			this->smjenaBox30->Name = L"smjenaBox30";
+			this->smjenaBox30->Size = System::Drawing::Size(51, 21);
+			this->smjenaBox30->TabIndex = 94;
+			// 
+			// smjenaBox31
+			// 
+			this->smjenaBox31->FormattingEnabled = true;
+			this->smjenaBox31->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"Prva", L"Druga", L"Treća" });
+			this->smjenaBox31->Location = System::Drawing::Point(46, 829);
+			this->smjenaBox31->Name = L"smjenaBox31";
+			this->smjenaBox31->Size = System::Drawing::Size(51, 21);
+			this->smjenaBox31->TabIndex = 93;
+			// 
+			// smjenaBox29
+			// 
+			this->smjenaBox29->FormattingEnabled = true;
+			this->smjenaBox29->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"Prva", L"Druga", L"Treća" });
+			this->smjenaBox29->Location = System::Drawing::Point(46, 775);
+			this->smjenaBox29->Name = L"smjenaBox29";
+			this->smjenaBox29->Size = System::Drawing::Size(51, 21);
+			this->smjenaBox29->TabIndex = 92;
+			// 
+			// smjenaBox28
+			// 
+			this->smjenaBox28->FormattingEnabled = true;
+			this->smjenaBox28->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"Prva", L"Druga", L"Treća" });
+			this->smjenaBox28->Location = System::Drawing::Point(46, 748);
+			this->smjenaBox28->Name = L"smjenaBox28";
+			this->smjenaBox28->Size = System::Drawing::Size(51, 21);
+			this->smjenaBox28->TabIndex = 91;
+			// 
+			// smjenaBox27
+			// 
+			this->smjenaBox27->FormattingEnabled = true;
+			this->smjenaBox27->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"Prva", L"Druga", L"Treća" });
+			this->smjenaBox27->Location = System::Drawing::Point(46, 721);
+			this->smjenaBox27->Name = L"smjenaBox27";
+			this->smjenaBox27->Size = System::Drawing::Size(51, 21);
+			this->smjenaBox27->TabIndex = 90;
+			// 
+			// smjenaBox26
+			// 
+			this->smjenaBox26->FormattingEnabled = true;
+			this->smjenaBox26->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"Prva", L"Druga", L"Treća" });
+			this->smjenaBox26->Location = System::Drawing::Point(46, 694);
+			this->smjenaBox26->Name = L"smjenaBox26";
+			this->smjenaBox26->Size = System::Drawing::Size(51, 21);
+			this->smjenaBox26->TabIndex = 89;
+			// 
+			// smjenaBox25
+			// 
+			this->smjenaBox25->FormattingEnabled = true;
+			this->smjenaBox25->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"Prva", L"Druga", L"Treća" });
+			this->smjenaBox25->Location = System::Drawing::Point(46, 667);
+			this->smjenaBox25->Name = L"smjenaBox25";
+			this->smjenaBox25->Size = System::Drawing::Size(51, 21);
+			this->smjenaBox25->TabIndex = 88;
+			// 
+			// smjenaBox24
+			// 
+			this->smjenaBox24->FormattingEnabled = true;
+			this->smjenaBox24->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"Prva", L"Druga", L"Treća" });
+			this->smjenaBox24->Location = System::Drawing::Point(46, 640);
+			this->smjenaBox24->Name = L"smjenaBox24";
+			this->smjenaBox24->Size = System::Drawing::Size(51, 21);
+			this->smjenaBox24->TabIndex = 87;
+			// 
+			// smjenaBox23
+			// 
+			this->smjenaBox23->FormattingEnabled = true;
+			this->smjenaBox23->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"Prva", L"Druga", L"Treća" });
+			this->smjenaBox23->Location = System::Drawing::Point(46, 613);
+			this->smjenaBox23->Name = L"smjenaBox23";
+			this->smjenaBox23->Size = System::Drawing::Size(51, 21);
+			this->smjenaBox23->TabIndex = 86;
+			// 
+			// smjenaBox22
+			// 
+			this->smjenaBox22->FormattingEnabled = true;
+			this->smjenaBox22->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"Prva", L"Druga", L"Treća" });
+			this->smjenaBox22->Location = System::Drawing::Point(46, 586);
+			this->smjenaBox22->Name = L"smjenaBox22";
+			this->smjenaBox22->Size = System::Drawing::Size(51, 21);
+			this->smjenaBox22->TabIndex = 85;
+			// 
+			// smjenaBox21
+			// 
+			this->smjenaBox21->FormattingEnabled = true;
+			this->smjenaBox21->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"Prva", L"Druga", L"Treća" });
+			this->smjenaBox21->Location = System::Drawing::Point(46, 559);
+			this->smjenaBox21->Name = L"smjenaBox21";
+			this->smjenaBox21->Size = System::Drawing::Size(51, 21);
+			this->smjenaBox21->TabIndex = 84;
+			// 
+			// smjenaBox20
+			// 
+			this->smjenaBox20->FormattingEnabled = true;
+			this->smjenaBox20->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"Prva", L"Druga", L"Treća" });
+			this->smjenaBox20->Location = System::Drawing::Point(46, 532);
+			this->smjenaBox20->Name = L"smjenaBox20";
+			this->smjenaBox20->Size = System::Drawing::Size(51, 21);
+			this->smjenaBox20->TabIndex = 83;
+			// 
+			// smjenaBox19
+			// 
+			this->smjenaBox19->FormattingEnabled = true;
+			this->smjenaBox19->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"Prva", L"Druga", L"Treća" });
+			this->smjenaBox19->Location = System::Drawing::Point(46, 505);
+			this->smjenaBox19->Name = L"smjenaBox19";
+			this->smjenaBox19->Size = System::Drawing::Size(51, 21);
+			this->smjenaBox19->TabIndex = 82;
+			// 
+			// smjenaBox18
+			// 
+			this->smjenaBox18->FormattingEnabled = true;
+			this->smjenaBox18->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"Prva", L"Druga", L"Treća" });
+			this->smjenaBox18->Location = System::Drawing::Point(46, 478);
+			this->smjenaBox18->Name = L"smjenaBox18";
+			this->smjenaBox18->Size = System::Drawing::Size(51, 21);
+			this->smjenaBox18->TabIndex = 81;
+			// 
+			// smjenaBox17
+			// 
+			this->smjenaBox17->FormattingEnabled = true;
+			this->smjenaBox17->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"Prva", L"Druga", L"Treća" });
+			this->smjenaBox17->Location = System::Drawing::Point(46, 451);
+			this->smjenaBox17->Name = L"smjenaBox17";
+			this->smjenaBox17->Size = System::Drawing::Size(51, 21);
+			this->smjenaBox17->TabIndex = 80;
+			// 
+			// smjenaBox16
+			// 
+			this->smjenaBox16->FormattingEnabled = true;
+			this->smjenaBox16->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"Prva", L"Druga", L"Treća" });
+			this->smjenaBox16->Location = System::Drawing::Point(46, 424);
+			this->smjenaBox16->Name = L"smjenaBox16";
+			this->smjenaBox16->Size = System::Drawing::Size(51, 21);
+			this->smjenaBox16->TabIndex = 79;
+			// 
+			// smjenaBox15
+			// 
+			this->smjenaBox15->FormattingEnabled = true;
+			this->smjenaBox15->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"Prva", L"Druga", L"Treća" });
+			this->smjenaBox15->Location = System::Drawing::Point(46, 397);
+			this->smjenaBox15->Name = L"smjenaBox15";
+			this->smjenaBox15->Size = System::Drawing::Size(51, 21);
+			this->smjenaBox15->TabIndex = 78;
+			// 
+			// smjenaBox14
+			// 
+			this->smjenaBox14->FormattingEnabled = true;
+			this->smjenaBox14->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"Prva", L"Druga", L"Treća" });
+			this->smjenaBox14->Location = System::Drawing::Point(46, 370);
+			this->smjenaBox14->Name = L"smjenaBox14";
+			this->smjenaBox14->Size = System::Drawing::Size(51, 21);
+			this->smjenaBox14->TabIndex = 77;
+			// 
+			// smjenaBox13
+			// 
+			this->smjenaBox13->FormattingEnabled = true;
+			this->smjenaBox13->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"Prva", L"Druga", L"Treća" });
+			this->smjenaBox13->Location = System::Drawing::Point(46, 343);
+			this->smjenaBox13->Name = L"smjenaBox13";
+			this->smjenaBox13->Size = System::Drawing::Size(51, 21);
+			this->smjenaBox13->TabIndex = 76;
+			// 
+			// smjenaBox12
+			// 
+			this->smjenaBox12->FormattingEnabled = true;
+			this->smjenaBox12->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"Prva", L"Druga", L"Treća" });
+			this->smjenaBox12->Location = System::Drawing::Point(46, 316);
+			this->smjenaBox12->Name = L"smjenaBox12";
+			this->smjenaBox12->Size = System::Drawing::Size(51, 21);
+			this->smjenaBox12->TabIndex = 75;
+			// 
+			// smjenaBox11
+			// 
+			this->smjenaBox11->FormattingEnabled = true;
+			this->smjenaBox11->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"Prva", L"Druga", L"Treća" });
+			this->smjenaBox11->Location = System::Drawing::Point(46, 289);
+			this->smjenaBox11->Name = L"smjenaBox11";
+			this->smjenaBox11->Size = System::Drawing::Size(51, 21);
+			this->smjenaBox11->TabIndex = 74;
+			// 
+			// smjenaBox10
+			// 
+			this->smjenaBox10->FormattingEnabled = true;
+			this->smjenaBox10->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"Prva", L"Druga", L"Treća" });
+			this->smjenaBox10->Location = System::Drawing::Point(46, 262);
+			this->smjenaBox10->Name = L"smjenaBox10";
+			this->smjenaBox10->Size = System::Drawing::Size(51, 21);
+			this->smjenaBox10->TabIndex = 73;
+			// 
+			// smjenaBox9
+			// 
+			this->smjenaBox9->FormattingEnabled = true;
+			this->smjenaBox9->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"Prva", L"Druga", L"Treća" });
+			this->smjenaBox9->Location = System::Drawing::Point(46, 235);
+			this->smjenaBox9->Name = L"smjenaBox9";
+			this->smjenaBox9->Size = System::Drawing::Size(51, 21);
+			this->smjenaBox9->TabIndex = 72;
+			// 
+			// smjenaBox8
+			// 
+			this->smjenaBox8->FormattingEnabled = true;
+			this->smjenaBox8->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"Prva", L"Druga", L"Treća" });
+			this->smjenaBox8->Location = System::Drawing::Point(46, 208);
+			this->smjenaBox8->Name = L"smjenaBox8";
+			this->smjenaBox8->Size = System::Drawing::Size(51, 21);
+			this->smjenaBox8->TabIndex = 71;
+			// 
+			// smjenaBox7
+			// 
+			this->smjenaBox7->FormattingEnabled = true;
+			this->smjenaBox7->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"Prva", L"Druga", L"Treća" });
+			this->smjenaBox7->Location = System::Drawing::Point(46, 181);
+			this->smjenaBox7->Name = L"smjenaBox7";
+			this->smjenaBox7->Size = System::Drawing::Size(51, 21);
+			this->smjenaBox7->TabIndex = 70;
+			// 
+			// smjenaBox6
+			// 
+			this->smjenaBox6->FormattingEnabled = true;
+			this->smjenaBox6->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"Prva", L"Druga", L"Treća" });
+			this->smjenaBox6->Location = System::Drawing::Point(46, 154);
+			this->smjenaBox6->Name = L"smjenaBox6";
+			this->smjenaBox6->Size = System::Drawing::Size(51, 21);
+			this->smjenaBox6->TabIndex = 69;
+			// 
+			// smjenaBox5
+			// 
+			this->smjenaBox5->FormattingEnabled = true;
+			this->smjenaBox5->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"Prva", L"Druga", L"Treća" });
+			this->smjenaBox5->Location = System::Drawing::Point(46, 127);
+			this->smjenaBox5->Name = L"smjenaBox5";
+			this->smjenaBox5->Size = System::Drawing::Size(51, 21);
+			this->smjenaBox5->TabIndex = 68;
+			// 
+			// smjenaBox4
+			// 
+			this->smjenaBox4->FormattingEnabled = true;
+			this->smjenaBox4->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"Prva", L"Druga", L"Treća" });
+			this->smjenaBox4->Location = System::Drawing::Point(46, 100);
+			this->smjenaBox4->Name = L"smjenaBox4";
+			this->smjenaBox4->Size = System::Drawing::Size(51, 21);
+			this->smjenaBox4->TabIndex = 67;
+			// 
+			// smjenaBox3
+			// 
+			this->smjenaBox3->FormattingEnabled = true;
+			this->smjenaBox3->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"Prva", L"Druga", L"Treća" });
+			this->smjenaBox3->Location = System::Drawing::Point(46, 73);
+			this->smjenaBox3->Name = L"smjenaBox3";
+			this->smjenaBox3->Size = System::Drawing::Size(51, 21);
+			this->smjenaBox3->TabIndex = 66;
+			// 
+			// smjenaBox2
+			// 
+			this->smjenaBox2->FormattingEnabled = true;
+			this->smjenaBox2->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"Prva", L"Druga", L"Treća" });
+			this->smjenaBox2->Location = System::Drawing::Point(46, 46);
+			this->smjenaBox2->Name = L"smjenaBox2";
+			this->smjenaBox2->Size = System::Drawing::Size(51, 21);
+			this->smjenaBox2->TabIndex = 65;
+			// 
+			// smjenaBox1
+			// 
+			this->smjenaBox1->FormattingEnabled = true;
+			this->smjenaBox1->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"Prva", L"Druga", L"Treća" });
+			this->smjenaBox1->Location = System::Drawing::Point(46, 19);
+			this->smjenaBox1->Name = L"smjenaBox1";
+			this->smjenaBox1->Size = System::Drawing::Size(51, 21);
+			this->smjenaBox1->TabIndex = 64;
 			// 
 			// label21
 			// 
@@ -1092,7 +1412,7 @@ private: System::Windows::Forms::ComboBox^ comboBox3;
 			this->progressBar->BackColor = System::Drawing::SystemColors::Control;
 			this->progressBar->Location = System::Drawing::Point(228, 3);
 			this->progressBar->Name = L"progressBar";
-			this->progressBar->Size = System::Drawing::Size(646, 23);
+			this->progressBar->Size = System::Drawing::Size(598, 23);
 			this->progressBar->TabIndex = 21;
 			// 
 			// panel1
@@ -1103,306 +1423,17 @@ private: System::Windows::Forms::ComboBox^ comboBox3;
 			this->panel1->Controls->Add(this->label1);
 			this->panel1->Controls->Add(this->progressBar);
 			this->panel1->Dock = System::Windows::Forms::DockStyle::Bottom;
-			this->panel1->Location = System::Drawing::Point(0, 703);
+			this->panel1->Location = System::Drawing::Point(0, 645);
 			this->panel1->Name = L"panel1";
-			this->panel1->Size = System::Drawing::Size(959, 29);
+			this->panel1->Size = System::Drawing::Size(911, 29);
 			this->panel1->TabIndex = 22;
-			// 
-			// comboBox1
-			// 
-			this->comboBox1->FormattingEnabled = true;
-			this->comboBox1->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"Prva", L"Druga", L"Treća" });
-			this->comboBox1->Location = System::Drawing::Point(46, 19);
-			this->comboBox1->Name = L"comboBox1";
-			this->comboBox1->Size = System::Drawing::Size(51, 21);
-			this->comboBox1->TabIndex = 64;
-			// 
-			// comboBox2
-			// 
-			this->comboBox2->FormattingEnabled = true;
-			this->comboBox2->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"Prva", L"Druga", L"Treća" });
-			this->comboBox2->Location = System::Drawing::Point(46, 46);
-			this->comboBox2->Name = L"comboBox2";
-			this->comboBox2->Size = System::Drawing::Size(51, 21);
-			this->comboBox2->TabIndex = 65;
-			// 
-			// comboBox3
-			// 
-			this->comboBox3->FormattingEnabled = true;
-			this->comboBox3->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"Prva", L"Druga", L"Treća" });
-			this->comboBox3->Location = System::Drawing::Point(46, 73);
-			this->comboBox3->Name = L"comboBox3";
-			this->comboBox3->Size = System::Drawing::Size(51, 21);
-			this->comboBox3->TabIndex = 66;
-			// 
-			// comboBox4
-			// 
-			this->comboBox4->FormattingEnabled = true;
-			this->comboBox4->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"Prva", L"Druga", L"Treća" });
-			this->comboBox4->Location = System::Drawing::Point(46, 100);
-			this->comboBox4->Name = L"comboBox4";
-			this->comboBox4->Size = System::Drawing::Size(51, 21);
-			this->comboBox4->TabIndex = 67;
-			// 
-			// comboBox5
-			// 
-			this->comboBox5->FormattingEnabled = true;
-			this->comboBox5->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"Prva", L"Druga", L"Treća" });
-			this->comboBox5->Location = System::Drawing::Point(46, 127);
-			this->comboBox5->Name = L"comboBox5";
-			this->comboBox5->Size = System::Drawing::Size(51, 21);
-			this->comboBox5->TabIndex = 68;
-			// 
-			// comboBox6
-			// 
-			this->comboBox6->FormattingEnabled = true;
-			this->comboBox6->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"Prva", L"Druga", L"Treća" });
-			this->comboBox6->Location = System::Drawing::Point(46, 154);
-			this->comboBox6->Name = L"comboBox6";
-			this->comboBox6->Size = System::Drawing::Size(51, 21);
-			this->comboBox6->TabIndex = 69;
-			// 
-			// comboBox7
-			// 
-			this->comboBox7->FormattingEnabled = true;
-			this->comboBox7->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"Prva", L"Druga", L"Treća" });
-			this->comboBox7->Location = System::Drawing::Point(46, 181);
-			this->comboBox7->Name = L"comboBox7";
-			this->comboBox7->Size = System::Drawing::Size(51, 21);
-			this->comboBox7->TabIndex = 70;
-			// 
-			// comboBox8
-			// 
-			this->comboBox8->FormattingEnabled = true;
-			this->comboBox8->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"Prva", L"Druga", L"Treća" });
-			this->comboBox8->Location = System::Drawing::Point(46, 208);
-			this->comboBox8->Name = L"comboBox8";
-			this->comboBox8->Size = System::Drawing::Size(51, 21);
-			this->comboBox8->TabIndex = 71;
-			// 
-			// comboBox9
-			// 
-			this->comboBox9->FormattingEnabled = true;
-			this->comboBox9->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"Prva", L"Druga", L"Treća" });
-			this->comboBox9->Location = System::Drawing::Point(46, 235);
-			this->comboBox9->Name = L"comboBox9";
-			this->comboBox9->Size = System::Drawing::Size(51, 21);
-			this->comboBox9->TabIndex = 72;
-			// 
-			// comboBox10
-			// 
-			this->comboBox10->FormattingEnabled = true;
-			this->comboBox10->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"Prva", L"Druga", L"Treća" });
-			this->comboBox10->Location = System::Drawing::Point(46, 478);
-			this->comboBox10->Name = L"comboBox10";
-			this->comboBox10->Size = System::Drawing::Size(51, 21);
-			this->comboBox10->TabIndex = 81;
-			// 
-			// comboBox11
-			// 
-			this->comboBox11->FormattingEnabled = true;
-			this->comboBox11->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"Prva", L"Druga", L"Treća" });
-			this->comboBox11->Location = System::Drawing::Point(46, 451);
-			this->comboBox11->Name = L"comboBox11";
-			this->comboBox11->Size = System::Drawing::Size(51, 21);
-			this->comboBox11->TabIndex = 80;
-			// 
-			// comboBox12
-			// 
-			this->comboBox12->FormattingEnabled = true;
-			this->comboBox12->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"Prva", L"Druga", L"Treća" });
-			this->comboBox12->Location = System::Drawing::Point(46, 424);
-			this->comboBox12->Name = L"comboBox12";
-			this->comboBox12->Size = System::Drawing::Size(51, 21);
-			this->comboBox12->TabIndex = 79;
-			// 
-			// comboBox13
-			// 
-			this->comboBox13->FormattingEnabled = true;
-			this->comboBox13->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"Prva", L"Druga", L"Treća" });
-			this->comboBox13->Location = System::Drawing::Point(46, 397);
-			this->comboBox13->Name = L"comboBox13";
-			this->comboBox13->Size = System::Drawing::Size(51, 21);
-			this->comboBox13->TabIndex = 78;
-			// 
-			// comboBox14
-			// 
-			this->comboBox14->FormattingEnabled = true;
-			this->comboBox14->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"Prva", L"Druga", L"Treća" });
-			this->comboBox14->Location = System::Drawing::Point(46, 370);
-			this->comboBox14->Name = L"comboBox14";
-			this->comboBox14->Size = System::Drawing::Size(51, 21);
-			this->comboBox14->TabIndex = 77;
-			// 
-			// comboBox15
-			// 
-			this->comboBox15->FormattingEnabled = true;
-			this->comboBox15->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"Prva", L"Druga", L"Treća" });
-			this->comboBox15->Location = System::Drawing::Point(46, 343);
-			this->comboBox15->Name = L"comboBox15";
-			this->comboBox15->Size = System::Drawing::Size(51, 21);
-			this->comboBox15->TabIndex = 76;
-			// 
-			// comboBox16
-			// 
-			this->comboBox16->FormattingEnabled = true;
-			this->comboBox16->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"Prva", L"Druga", L"Treća" });
-			this->comboBox16->Location = System::Drawing::Point(46, 316);
-			this->comboBox16->Name = L"comboBox16";
-			this->comboBox16->Size = System::Drawing::Size(51, 21);
-			this->comboBox16->TabIndex = 75;
-			// 
-			// comboBox17
-			// 
-			this->comboBox17->FormattingEnabled = true;
-			this->comboBox17->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"Prva", L"Druga", L"Treća" });
-			this->comboBox17->Location = System::Drawing::Point(46, 289);
-			this->comboBox17->Name = L"comboBox17";
-			this->comboBox17->Size = System::Drawing::Size(51, 21);
-			this->comboBox17->TabIndex = 74;
-			// 
-			// comboBox18
-			// 
-			this->comboBox18->FormattingEnabled = true;
-			this->comboBox18->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"Prva", L"Druga", L"Treća" });
-			this->comboBox18->Location = System::Drawing::Point(46, 262);
-			this->comboBox18->Name = L"comboBox18";
-			this->comboBox18->Size = System::Drawing::Size(51, 21);
-			this->comboBox18->TabIndex = 73;
-			// 
-			// comboBox19
-			// 
-			this->comboBox19->FormattingEnabled = true;
-			this->comboBox19->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"Prva", L"Druga", L"Treća" });
-			this->comboBox19->Location = System::Drawing::Point(46, 829);
-			this->comboBox19->Name = L"comboBox19";
-			this->comboBox19->Size = System::Drawing::Size(51, 21);
-			this->comboBox19->TabIndex = 93;
-			// 
-			// comboBox20
-			// 
-			this->comboBox20->FormattingEnabled = true;
-			this->comboBox20->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"Prva", L"Druga", L"Treća" });
-			this->comboBox20->Location = System::Drawing::Point(46, 775);
-			this->comboBox20->Name = L"comboBox20";
-			this->comboBox20->Size = System::Drawing::Size(51, 21);
-			this->comboBox20->TabIndex = 92;
-			// 
-			// comboBox21
-			// 
-			this->comboBox21->FormattingEnabled = true;
-			this->comboBox21->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"Prva", L"Druga", L"Treća" });
-			this->comboBox21->Location = System::Drawing::Point(46, 748);
-			this->comboBox21->Name = L"comboBox21";
-			this->comboBox21->Size = System::Drawing::Size(51, 21);
-			this->comboBox21->TabIndex = 91;
-			// 
-			// comboBox22
-			// 
-			this->comboBox22->FormattingEnabled = true;
-			this->comboBox22->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"Prva", L"Druga", L"Treća" });
-			this->comboBox22->Location = System::Drawing::Point(46, 721);
-			this->comboBox22->Name = L"comboBox22";
-			this->comboBox22->Size = System::Drawing::Size(51, 21);
-			this->comboBox22->TabIndex = 90;
-			// 
-			// comboBox23
-			// 
-			this->comboBox23->FormattingEnabled = true;
-			this->comboBox23->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"Prva", L"Druga", L"Treća" });
-			this->comboBox23->Location = System::Drawing::Point(46, 694);
-			this->comboBox23->Name = L"comboBox23";
-			this->comboBox23->Size = System::Drawing::Size(51, 21);
-			this->comboBox23->TabIndex = 89;
-			// 
-			// comboBox24
-			// 
-			this->comboBox24->FormattingEnabled = true;
-			this->comboBox24->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"Prva", L"Druga", L"Treća" });
-			this->comboBox24->Location = System::Drawing::Point(46, 667);
-			this->comboBox24->Name = L"comboBox24";
-			this->comboBox24->Size = System::Drawing::Size(51, 21);
-			this->comboBox24->TabIndex = 88;
-			// 
-			// comboBox25
-			// 
-			this->comboBox25->FormattingEnabled = true;
-			this->comboBox25->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"Prva", L"Druga", L"Treća" });
-			this->comboBox25->Location = System::Drawing::Point(46, 640);
-			this->comboBox25->Name = L"comboBox25";
-			this->comboBox25->Size = System::Drawing::Size(51, 21);
-			this->comboBox25->TabIndex = 87;
-			// 
-			// comboBox26
-			// 
-			this->comboBox26->FormattingEnabled = true;
-			this->comboBox26->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"Prva", L"Druga", L"Treća" });
-			this->comboBox26->Location = System::Drawing::Point(46, 613);
-			this->comboBox26->Name = L"comboBox26";
-			this->comboBox26->Size = System::Drawing::Size(51, 21);
-			this->comboBox26->TabIndex = 86;
-			// 
-			// comboBox27
-			// 
-			this->comboBox27->FormattingEnabled = true;
-			this->comboBox27->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"Prva", L"Druga", L"Treća" });
-			this->comboBox27->Location = System::Drawing::Point(46, 586);
-			this->comboBox27->Name = L"comboBox27";
-			this->comboBox27->Size = System::Drawing::Size(51, 21);
-			this->comboBox27->TabIndex = 85;
-			// 
-			// comboBox28
-			// 
-			this->comboBox28->FormattingEnabled = true;
-			this->comboBox28->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"Prva", L"Druga", L"Treća" });
-			this->comboBox28->Location = System::Drawing::Point(46, 559);
-			this->comboBox28->Name = L"comboBox28";
-			this->comboBox28->Size = System::Drawing::Size(51, 21);
-			this->comboBox28->TabIndex = 84;
-			// 
-			// comboBox29
-			// 
-			this->comboBox29->FormattingEnabled = true;
-			this->comboBox29->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"Prva", L"Druga", L"Treća" });
-			this->comboBox29->Location = System::Drawing::Point(46, 532);
-			this->comboBox29->Name = L"comboBox29";
-			this->comboBox29->Size = System::Drawing::Size(51, 21);
-			this->comboBox29->TabIndex = 83;
-			// 
-			// comboBox30
-			// 
-			this->comboBox30->FormattingEnabled = true;
-			this->comboBox30->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"Prva", L"Druga", L"Treća" });
-			this->comboBox30->Location = System::Drawing::Point(46, 505);
-			this->comboBox30->Name = L"comboBox30";
-			this->comboBox30->Size = System::Drawing::Size(51, 21);
-			this->comboBox30->TabIndex = 82;
-			// 
-			// comboBox31
-			// 
-			this->comboBox31->FormattingEnabled = true;
-			this->comboBox31->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"Prva", L"Druga", L"Treća" });
-			this->comboBox31->Location = System::Drawing::Point(46, 802);
-			this->comboBox31->Name = L"comboBox31";
-			this->comboBox31->Size = System::Drawing::Size(51, 21);
-			this->comboBox31->TabIndex = 94;
-			// 
-			// label3
-			// 
-			this->label3->AutoSize = true;
-			this->label3->Location = System::Drawing::Point(50, 3);
-			this->label3->Name = L"label3";
-			this->label3->Size = System::Drawing::Size(42, 13);
-			this->label3->TabIndex = 95;
-			this->label3->Text = L"Smjena";
 			// 
 			// mainForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->AutoSize = true;
 			this->BackColor = System::Drawing::SystemColors::Control;
-			this->ClientSize = System::Drawing::Size(959, 732);
+			this->ClientSize = System::Drawing::Size(911, 674);
 			this->Controls->Add(this->panel1);
 			this->Controls->Add(this->tabControl1);
 			this->Controls->Add(this->menuStrip1);
