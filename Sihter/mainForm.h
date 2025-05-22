@@ -642,7 +642,7 @@ private: System::Windows::Forms::ComboBox^ smjenaBox3;
 			// doneButton
 			// 
 			this->doneButton->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Right));
-			this->doneButton->Location = System::Drawing::Point(829, 3);
+			this->doneButton->Location = System::Drawing::Point(412, 3);
 			this->doneButton->Name = L"doneButton";
 			this->doneButton->Size = System::Drawing::Size(75, 23);
 			this->doneButton->TabIndex = 14;
@@ -686,7 +686,7 @@ private: System::Windows::Forms::ComboBox^ smjenaBox3;
 			this->menuStrip1->Location = System::Drawing::Point(0, 0);
 			this->menuStrip1->Name = L"menuStrip1";
 			this->menuStrip1->RenderMode = System::Windows::Forms::ToolStripRenderMode::Professional;
-			this->menuStrip1->Size = System::Drawing::Size(911, 24);
+			this->menuStrip1->Size = System::Drawing::Size(494, 24);
 			this->menuStrip1->TabIndex = 19;
 			this->menuStrip1->Text = L"menuStrip1";
 			// 
@@ -728,7 +728,7 @@ private: System::Windows::Forms::ComboBox^ smjenaBox3;
 			this->tabControl1->Location = System::Drawing::Point(12, 27);
 			this->tabControl1->Name = L"tabControl1";
 			this->tabControl1->SelectedIndex = 0;
-			this->tabControl1->Size = System::Drawing::Size(887, 612);
+			this->tabControl1->Size = System::Drawing::Size(470, 227);
 			this->tabControl1->TabIndex = 20;
 			// 
 			// defaultInfoTab
@@ -749,7 +749,7 @@ private: System::Windows::Forms::ComboBox^ smjenaBox3;
 			this->defaultInfoTab->Location = System::Drawing::Point(4, 22);
 			this->defaultInfoTab->Name = L"defaultInfoTab";
 			this->defaultInfoTab->Padding = System::Windows::Forms::Padding(3);
-			this->defaultInfoTab->Size = System::Drawing::Size(459, 201);
+			this->defaultInfoTab->Size = System::Drawing::Size(462, 201);
 			this->defaultInfoTab->TabIndex = 0;
 			this->defaultInfoTab->Text = L"Osnovni podaci";
 			// 
@@ -824,7 +824,7 @@ private: System::Windows::Forms::ComboBox^ smjenaBox3;
 			this->workTimeTab->Location = System::Drawing::Point(4, 22);
 			this->workTimeTab->Name = L"workTimeTab";
 			this->workTimeTab->Padding = System::Windows::Forms::Padding(3);
-			this->workTimeTab->Size = System::Drawing::Size(879, 586);
+			this->workTimeTab->Size = System::Drawing::Size(462, 201);
 			this->workTimeTab->TabIndex = 1;
 			this->workTimeTab->Text = L"Vrijeme rada";
 			this->workTimeTab->UseVisualStyleBackColor = true;
@@ -1412,7 +1412,7 @@ private: System::Windows::Forms::ComboBox^ smjenaBox3;
 			this->progressBar->BackColor = System::Drawing::SystemColors::Control;
 			this->progressBar->Location = System::Drawing::Point(228, 3);
 			this->progressBar->Name = L"progressBar";
-			this->progressBar->Size = System::Drawing::Size(598, 23);
+			this->progressBar->Size = System::Drawing::Size(181, 23);
 			this->progressBar->TabIndex = 21;
 			// 
 			// panel1
@@ -1423,9 +1423,9 @@ private: System::Windows::Forms::ComboBox^ smjenaBox3;
 			this->panel1->Controls->Add(this->label1);
 			this->panel1->Controls->Add(this->progressBar);
 			this->panel1->Dock = System::Windows::Forms::DockStyle::Bottom;
-			this->panel1->Location = System::Drawing::Point(0, 645);
+			this->panel1->Location = System::Drawing::Point(0, 260);
 			this->panel1->Name = L"panel1";
-			this->panel1->Size = System::Drawing::Size(911, 29);
+			this->panel1->Size = System::Drawing::Size(494, 29);
 			this->panel1->TabIndex = 22;
 			// 
 			// mainForm
@@ -1433,7 +1433,7 @@ private: System::Windows::Forms::ComboBox^ smjenaBox3;
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::SystemColors::Control;
-			this->ClientSize = System::Drawing::Size(911, 674);
+			this->ClientSize = System::Drawing::Size(494, 289);
 			this->Controls->Add(this->panel1);
 			this->Controls->Add(this->tabControl1);
 			this->Controls->Add(this->menuStrip1);
